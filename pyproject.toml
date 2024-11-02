@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "understand"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "typer",
+    "rich",
+    "html2text",
+    "beautifulsoup4",
+]
+
+[project.scripts]
+extract_content = "extract_content:app"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
