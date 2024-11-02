@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>My old Richter scale for system outages, revisited (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2022/11/23/outages">
+
+<meta property="og:title" content="My old Richter scale for system outages, revisited">
+
+<meta property="og:description" content="Posted on Wednesday 23 Nov 2022. 1,087 words, 10 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2022/11/23/outages.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2022-11-23T17:36:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">My old Richter scale for system outages, revisited</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    17.36, Wednesday 23 Nov 2022
+    <span class="nowrap">
+      <a
+        href="/home/2022/11/23/outages"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80"><em>It’s follow-up week! I’m blogging new words about old posts.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Re: <a href="/home/2015/03/12/richter_scale_for_outages">A Richter scale for outages</a> <em>(2015).</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Following a flurry of system outages (part of the Visa network was down, then iCloud for a bit) I scribbled some notes about quantifying the disruption…</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">Like the Richter magnitude scale, each magnitude is incrementally ten times bigger. So 4.0 is 100x bigger than 2.0. But like apparent magnitude it’s subjective: The scale of the human effect is taken into account.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Here’s what I reckon the scale might look like.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Full details in the post, but some highlights:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>2.0</strong> (Facebook down, outage lasts less than a day)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>4.0</strong> (<q>broad human inconvenience without threat</q>)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>8.0</strong> (e.g. the 2008 credit crunch or the Icelandic volcano grounding European flights)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>10.0</strong> (major network collapse, global and unrepairable).</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s an idea that keeps coming back in my head since 2015. It feels like it would be useful to have in the public discourse! It’s not like we’re going to have <em>fewer</em> system outages in the future.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But I’ve never been really satisfied with the scale itself. I’ve always been meaning to try to put my finger on why.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Short reviews of a few other scales</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong><a href="https://en.wikipedia.org/wiki/Beaufort_scale">Beaufort wind force scale</a></strong> (1805) – I like how practical, human, and sometimes poetic this is. Beaufort 2 is: <q>Wind felt on face; leaves rustle.</q> Beaufort 12, hurricane-force: <q>Devastation.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I think one of the reasons it works so well is that the lower numbers are very everyday, so it you can extrapolate and build a visceral understanding of extreme and rare events.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong><a href="https://en.wikipedia.org/wiki/Kardashev_scale">Kardashev scale</a></strong> (1964) – the classic scale of cosmic civilisational complexity, as measured by energy use. Type I: like the Earth, a planet making use of energy ultimately derived from its sun. Type II: a civilisation which has captured the <em>entire</em> energy of its sun, for example by building a Dyson sphere around the star. Type III: as II but able to direct the energy of an entire galaxy.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Not sure how applicable the Kardeshev scale is here but it’s fun…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong><a href="https://en.wikipedia.org/wiki/Rohn_emergency_scale">Rohn Emergency Scale</a></strong> (2006) – this scale has three independent dimensions: <strong>scope</strong> (measured in % of max population, or % loss in GDP); <strong>topography</strong> (<q>the estimated visual fractional change in the environment</q> – the collapse of a house is high; the collapse of a stock exchange is low); and <strong>speed of change.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s more of a descriptive framework than a scale, I’d say. I like that speed of change is in there.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong><a href="https://www.kth.se/en/om/nyheter/centrala-nyheter/nu-ska-elavbrott-matas-som-jordbavningar-1.309118">Viking Impact Magnitude</a></strong> (2012) aka “A Richter Scale for Power Outages” – this paper shows how the scale is derived in a bottom-up fashion, which is super interesting. It’s rigorous, but again there’s the focus on the human impact. The scale of 1–10 is <q>obtained by multiplying the number of affected people by the duration of the interruption.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The scale makes different events comparable: for example a 2007 cyclone in Sweden has the same impact as an earthquake, or maybe a hacker attack. Then the scale number can be correlated with a $ cost.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">ALSO, one fictional datapoint. <strong>The jackpot,</strong> coined by William Gibson in <em>The Peripheral</em> (2014) and <a href="/home/2022/02/09/apocalypsi">summarised here</a>. The climate crisis, mass extinctions; no more bees, antibiotics exhausted; rolling pandemics and water shortages, just… all of it and all at once. Whatever the scale is, the jackpot is the Big One.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Towards a revised Richter scale for system outages</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">Learning from the above, a revised scale should ideally:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">start with recognisable, everyday occurrences, and be more irritating than disruptive until about 4.0. It’s worth working to maintain a 1 to 10 scale.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">describe the impact not the cause. Dimensions are probably similar to the Viking scale, number of people affected and duration. </li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">I wonder how to include some measure of damage. Like, a 7 day WhatsApp outage would be a massive main but you can route around it <em>(although not if you’re <a href="https://www.theverge.com/22734705/facebook-whatsapp-outage-brazil-informal-workers-economy">an informal worker in Brazil</a>).</em> A 7 day water outage is a catastrophe in the making.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But maybe that’s not for this? A Richter 8.0 earthquake in the middle of a city and a Richter 8.0 in the remote wilderness are given the same number on the scale. You differentiate by giving the location.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Also under damage I’d put “effort to remedy.” Like, is it a reboot required, or a product recall?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A thought experiment: the <a href="https://en.wikipedia.org/wiki/Flint_water_crisis">8 years and counting Flint water crisis</a> is a water infrastructure disaster affecting 100,000 residents. In terms of damage, it’s way up there – but the remedy has taken its time probably due to a lack of will rather than actual severity.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Compare with a WhatsApp outage that is less sever but would affect <em>2 billion</em> users. Should they both be a 6.5? Or do we add context – is WhatsApp a widespread 4 and Flint a localised 8? The latter I think.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Being careful to specify the location answers many of my concerns I think. Twitter lost its timeline for a couple of hours the other day; we could describe that as a short sharp Twitter-localised 3.5, just enough to remind us of what we might lose, and you’d known what I meant. </p>
+<p class="measure-wide f6 f5-l lh-copy black-80">One thing I’m certain of: this scale is for <em>system</em> outages. If there’s a fault on a weather satellite, then it’s not the satellite that this scale is concerned with, it’s our weather forecast infrastructure generally.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Taking all of this into account, the scale in that old blog post stands up ok. I’d add some notes about usage and interpretation but that’s it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>So I’m going to leave the 2015 scale intact for now.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It needs a v2. But the purpose of that work should be to refine and add rigour. It should start with collected examples, and work to define its terms on both infrastructure and impact.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">That’s not something I can do on my own…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">However there are not one but <em>two</em> upcoming books about infrastructure I am excited about: <em>Public Utility</em> by <a href="http://debcha.org">Debbie Chachra</a> (she briefly ran me through the core argument and I can’t wait). And, by <a href="https://gsvoss.com/about">Georgina Voss</a>, her new book on complex systems for Verso. I don’t know the title but I got a preview of the chapter topics and I am equally psyched.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Which means my next step is to wait until those are published, inhale them both, chase down some references, and then start buying people coffee until someone who actually knows what they’re talking about wants to co-author a paper.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/complexity">complexity</a>
+          (6 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/eschatology">eschatology</a>
+          (7 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/new-words-about-old-posts">new-words-about-old-posts</a>
+          (5 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2022/11/23/outages">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. books" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

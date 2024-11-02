@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Clues for software design in how we sketch maps of cities (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2021/03/31/maps">
+
+<meta property="og:title" content="Clues for software design in how we sketch maps of cities">
+
+<meta property="og:description" content="Posted on Wednesday 31 Mar 2021. 1,339 words, 7 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2021/03/31/maps.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2021-03-31T21:10:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Clues for software design in how we sketch maps of cities</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    21.10, Wednesday 31 Mar 2021
+    <span class="nowrap">
+      <a
+        href="/home/2021/03/31/maps"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">There’s a remarkably simple notation for sketching cities, and I think it points at a better way to design software.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">A notation for describing a city</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">Kevin Lynch was <q>an urban planner who carried out pioneering work on people’s urban cognitive maps from the 1950s.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">As a planner, Lynch was interested in analysing the urban form, and in particular identified the criterion of the ‘legibility’ of a cityscape which he defined as ” the ease with which its parts can be recognized and can be organized into a coherent pattern”</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">… His method involved externalising the ‘mental images’ that city-dwellers have of their cities, through interviews and sketch-mapping exercises.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">(From these <a href="http://homepages.phonecoop.coop/vamos/work/lecturenotes/sun/LectureNotes/Env4_EnvCog/environmental9.html">lecture notes on the work of Kevin Lynch</a>.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This shared “mental images” is the subject of Lynch’s book <a href="https://en.wikipedia.org/wiki/The_Image_of_the_City">The Image of City</a> (1960) (and it blew my mind when I read it in - checks notes - 2003).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong><a href="https://www.researchgate.net/figure/Lynchs-mental-maps_fig2_309728517">Here’s an example of one of Lynch’s maps: Boston.</a></strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What you’ll see from that map is that it’s totally recognisable as a city, and you could totally use it to navigate, but it’s also what you would scribble on the back of a napkin. It’s also way more memorable. If you gave me a glimpse of Boston from Google Maps and asked me to sketch it for someone else, I can’t imagine it would include any of the salient details. But given a Lynch map, I bet I could pass on the most relevant bare bones, just from memory.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So Lynch has managed to capture what is essential about maps for (a) understanding, and (b) communication.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Lynch’s insight is that these scribbled maps use a notation of only five elements. From those earlier lecture notes, there are:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Paths: <q>They may be streets, walkways, transit lines, canals, railroads.</q></li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Edges: <q>They are the boundaries … shores, railroad cuts, edges of development, walls.</q></li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Districts: <q>Districts are the medium-to-large sections of the city … which the observer mentally enters “inside of”.</q></li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Nodes: <q>They may be primarily junctions, places of a break in transportation, a crossing or convergence of paths … [or] a street-corner or an enclosed square.</q></li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Landmarks: <q>They are usually a rather simply defined physical object: building, sign, store, or mountain. Their use involves the singling out of one element from a host of possibilities.</q></li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Out of these five elements, you can build an “image” (in Lynch’s terminology) of the city.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Do Lynch’s elements have a neurological underpinning?</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Landmarks</em> grab my attention, for this reason: they come up in <em>Mind Hacks,</em> in a chapter about memory and the hippocampus.</p>
+<blockquote cite="https://www.google.co.uk/books/edition/Mind_Hacks/K6bjvFUcedgC" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Mind Hacks" data-title="Hack #89: Navigate Your Way Through Memory (p304)">
+<p class="measure-wide f6 f5-l lh-copy black-80">We know that the human brain has specialized mechanisms dedicated to remembering landmarks, and that (interestingly) this region and those nearby seem to be responsible for giving humans and other animals a sense of where they are in space. Brain images of people navigating through virtual environments has shown that <u>even if we don’t consciously recognize something as a landmark it still triggers a response in this specialized part of the brain.</u></p>
+<footer class="measure f6 f5-l lh-copy black-80">– Mind Hacks, <cite><a href="https://www.google.co.uk/books/edition/Mind_Hacks/K6bjvFUcedgC">Hack #89: Navigate Your Way Through Memory (p304)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Quick plug: <a href="https://item.jd.com/13054358.html">Mind Hacks is now available in Chinese!</a> Check out the 11 second product video with perky music on that page. That brings us up to 7 translated editions, which feels pretty special.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So what I find intriguing is that we, us humans, appear to have a “landmark sense” that we all share.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Which is why, I guess, you can follow directions to go down the street and turn left at the fountain, and if you pass a cathedral then you know you’ve gone the wrong way – because such a landmark would certainly have been mentioned.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The question is this:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Do Lynch’s other elements also have neurological underpinnings?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And a follow up: If so, how could that be useful?</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Your memory resets when you walk through a door</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">The reason I ask is because of the Doorway Effect, which is something that happens also in physical space and not outdoors but indoors: <q>Memory was worse after passing through a doorway than after walking the same distance within a single room.</q></p>
+<blockquote cite="https://www.scientificamerican.com/article/why-walking-through-doorway-makes-you-forget/" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Scientific American" data-title="Why Walking through a Doorway Makes You Forget">
+<p class="measure-wide f6 f5-l lh-copy black-80">… some forms of memory seem to be optimized to keep information ready-to-hand until its shelf life expires, and then purge that information in favor of new stuff.  Radvansky and colleagues call this sort of memory representation an “event model,” and propose that walking through a doorway is a good time to purge your event models because whatever happened in the old room is likely to become less relevant now that you have changed venues.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Scientific American, <cite><a href="https://www.scientificamerican.com/article/why-walking-through-doorway-makes-you-forget/">Why Walking through a Doorway Makes You Forget</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">What’s especially intriguing about this study…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The Doorway Effect appears for real doorways. But ALSO: <q>It doesn’t seem to matter, for instance, whether the virtual environments are displayed on a 66” flat screen or a 17” CRT.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So, to review the precarious stack of speculation that I’m on:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">there are shared neurological underpinnings for how we understand space, and - in theory - an abstract system of space “elements”</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">in at least one situation, there is a correlation between how we move through space and how we mentally organise information</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">“moving through space” doesn’t need to be physical, but can be triggered by abstract representations.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Which provokes two thoughts:</p>
+<ol class="list ph0 ph0-ns numbered-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">If landmarks and doorways, then what is the full set of elements, and are there automatic memory operations for all of them?</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">How abstract can these spatial representations be, and can we use them in software?</li>
+</ol>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">What should Wikipedia or Notion do?</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">Given there’s an explosion in software to accrete and organise knowledge, is the page model really the best approach?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Perhaps the building blocks shouldn’t be pages or blocks, but</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">neighbourhoods</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">roads</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">rooms and doors</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">landmarks.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Or rather, as a knowledge base or wiki develops, it should - just like a real city - encourage its users to gravitate towards these different fundamental elements. A page that starts to function a little bit like a road should transform into a slick navigation element, available on all its linked pages. A page which is functioning like a landmark should start being visible from two hops away.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It would be interesting to investigate exactly what the minimal level of physical appearance is required to trigger the automatic behaviour of loading/resetting human memory and associations.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Like, following a hyperlink might not activate the neurological automation.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But what if there was a zooming out animation, or a change in colour, or the old page slid off to the side?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What’s the minimum you need to trick your brain into believing that you’re moving around an environment?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And could design features as simple as these make tools like Notion, Roam, Obsidian, Evernote and other note taking software, Wikipedia, etc, <em>radically better</em> for organising, navigating, sharing, and internalising knowledge, for individuals and for teams? If so, can you imagine the efficiency gains and the new ideas that could emerge?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Hippocampus ergonomics.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It would be worth a research lab and a year or two, I think.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">One final and quite literal idea: Could Lynch-style maps be generated automatically, and could this be an interface to Google Maps?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This paper believes this is possible: <a href="https://www.sciencedirect.com/science/article/pii/S0264275118309776">A computational approach to ‘The Image of the City’.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Although: <q>Out of the five elements, landmarks were found most challenging to extract.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My guess is that landmarks can’t be extracted from maps because they’re reliant on the visual field, approaches, other nearby potential landmarks, and so on. You would need to train an artificial landmark sensor in a machine hippocampus, perhaps giving it access to Street View and getting feedback data from humans on the spot asked to point at their nearest landmark.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Computationally producing Lynch maps would also allow for the <em>reverse</em> process, which is to give a robot car directions in the same way you would a person: down the street, left at the big building, follow it till the end and we’re the second on the left.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2021">20-most-popular-in-2021</a>
+          (20 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/04/23/star_wars">What wipes in Star Wars teach us about the brain and also interface design</a>
+        (23 Apr 2021)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/08/12/notation">Collecting my thoughts about notation and user interfaces</a>
+        (12 Aug 2021)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/11/19/airpods">AirPods, and the cognitive ergonomics of tools for thought</a>
+        (19 Nov 2021)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2022/12/09/dowsing">Dowsing is a technology for intuition amplification</a>
+        (9 Dec 2022)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2021/03/31/maps">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. weather" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>SAGE and a glimpse of group computing from before the PC (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2021/12/21/sage">
+
+<meta property="og:title" content="SAGE and a glimpse of group computing from before the PC">
+
+<meta property="og:description" content="Posted on Tuesday 21 Dec 2021. 1,438 words, 7 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2021/12/21/sage.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2021-12-21T22:18:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">SAGE and a glimpse of group computing from before the PC</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    22.18, Tuesday 21 Dec 2021
+    <span class="nowrap">
+      <a
+        href="/home/2021/12/21/sage"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">There was a fork in the road away from group computing, way back when.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Right now we’re in the era of <em>personal</em> computers. Collaboration, social use of tools, togetherness: all of these are hacks on top of something that, at its core, was designed for the individual first.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But there’s a particular photograph of group computing from the 1950s, from before the PC was invented…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Ok I need to rattle out a story here about SAGE, and that will let me get to the photograph.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m going to do this from memory so apologies in advance for any factual errors, but I think I’ve got the bones of it in order.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Earlier this year I did a three part talk about the pre-history of computing and so a lot of this is in my head from then. It was a super fun talk with a novel format – three x 1 hour talks on successive evenings across a single conference, each picking out and storytelling around particular moment in the evolution of today’s technology. And it got great ratings in the feedback. I was pleased about that.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">To get to SAGE and to put it in context, I need to rewind a whole way.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">ONCE UPON A TIME.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">One way (not the only way) of telling the story of computers goes like this.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Tabulating machines were invented in 1890 for the US Census and went on for the next 50 years without any fundamental changes but with great popularity in business. They were electromechanical sideboards that basically ran a small set of Excel commands on stacks of what became standard issue IBM punchcards – which we retain today in the shape of air flight boarding cards.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The Second World War was a catalytic event. The need to quickly calculate ballistics tables led to the first fully electronic computer, ENIAC (which also became one of the world’s first programmable computers in the modern sense), although the initial task in 1945 for this room-sized machine was numerical modelling for the hydrogen bomb at the tail end of the Manhattan Project, the vast secret project to create nuclear weapons.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Let’s take a moment to name the first of the first, the original programmers of ENIAC, all women: Kay McNulty, Betty Jennings, Betty Snyder, Marlyn Meltzer, Fran Bilas, and Ruth Lichterman.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Skip ahead to 1968 and the invention of the personal computer. Douglas Engelbart’s team attaches a screen to a military computer and, in 90 minutes in <em>The Mother of All Demos,</em> demonstrates a whole new user interface: interactive text, video collaboration, modern office furniture, and the mouse. The demo consisted of Engelbart managing his shopping list.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The PC was an audacious conceptual leap: <q>the idea of an individual computer being used by a single person for their own specific work tasks was akin to the idea of a baseball stadium being used by one player</q>  <em>(<a href="https://thenewstack.io/49-years-ago-douglas-engelbart-predicted-future-mother-demos/">Alex Handy, The New Stack</a>).</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Between the milestones of ENIAC and Engelbart there was SAGE.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">For comparison: The Manhattan Project in the 1940s cost about $20bn in today’s money. SAGE cost $60bn. The <em>Semi-Automatic Ground Environment</em> was built out over the 1950s and was a direct defence against the atomic weapons developed in the mega-project of the previous decade, a continent-wide sensing, synthesis, and rapid response platform blending human intelligence and technology. It ran for over 20 years.</p>
+<blockquote cite="https://www.ll.mit.edu/about/history/sage-semi-automatic-ground-environment-air-defense-system" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="MIT Lincoln Laboratory" data-title="SAGE: Semi-Automatic Ground Environment air defences system">
+<p class="measure-wide f6 f5-l lh-copy black-80">The SAGE system, by the time of its full deployment, consisted of 100s of radars, 24 direction centers, and 3 combat centers spread throughout the U.S. The direction centers were connected to 100s of airfields and surface-to-air missile sites, providing a multilayered engagement capability. Each direction center housed a dual-redundant AN/FSQ-7 computer, evolved from MIT’s experimental Whirlwind computer of the 1950s. These computers hosted programs that consisted of over 500,000 lines of code and executed over 25,000 instructions – by far the largest computer programs ever written at that time. The direction centers automatically processed data from multiple remote radars, provided control information to intercepting aircraft and surface-to-air missile sites, and provided command and control and situational awareness displays to over 100 operator stations at each center.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– MIT Lincoln Laboratory, <cite><a href="https://www.ll.mit.edu/about/history/sage-semi-automatic-ground-environment-air-defense-system">SAGE: Semi-Automatic Ground Environment air defences system</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Imagine a network of radar stations covering the whole of North America, constantly looking out for nuclear bombers. SAGE never spotted one; bombers were quickly replaced as delivery mechanisms by the ICBM. It was the prototype for today’s air traffic control system.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Radar signals came into the 24 direction centers, were analysed by people and computers, and instructions sent out again to bombers and missile silos: the original <em>WarGames.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Each direction center was built around an AN/FSQ-7 – at 250 tonnes, the largest computer ever built. (With the transistor replacing vacuum tubes a few years later, the largest that ever would be built.) Then what you’ve got with SAGE is 100+ operator stations plugged into the same computer.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.computerhistory.org/revolution/real-time-computing/6/120/505">You can see the weapon’s director console here.</a> There’s a circular screen, like a radar display, and a light gun to select radar traces. There are toggle switches and a numerical rotary dial to tag the traces with numbers.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This is interactive computing in the real world for the first time!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So, for me, this is the pre-Engelbart breakthrough moment.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And in a way, it’s more authentic than any research project. What we see in SAGE is a new interface forged under perceived existential threat, something <em>actual,</em> not   philosophically derived or imagined by lone genius, but contoured along the grain of known human behaviour.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">On the left hand side of the console there is an ashtray.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Also it is not lost on me that the light gun was the particular interface device that was popularised by its use in this military system. Imagine being so accustomed to weapons that it feels entirely natural to select an icon on your computer screen by pointing a gun at it.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The successor to the AN/FSQ-7 was intended to be the much smaller, transistorised AN/FSQ-32.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Engelbart’s team in Stanford got its start in 1963 when it was given its first research contact by J. C. R. Licklider, director of ARPA: the US Defense Department’s Advanced Research Projects Agency. Licklider made it a condition that, instead of using a standalone computer in Stanford, Engelbart had to start by connecting a display to the new AN/FSQ-32.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So a connection from SAGE to Stanford and that brings us back to the PC.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">But it wasn’t inevitable that the Semi-Automatic Ground Environment would be followed by the personal computer.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m kinda obsessed with a particular road not taken…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">LOOK AT THIS. Here’s an archive photo on Wikipedia: <a href="https://en.wikipedia.org/wiki/Semi-Automatic_Ground_Environment#/media/File:SAGE_CC-1_Hancock_Field_New_York.jpg">Subsector Command Post of SAGE Combat Center at Syracuse Air Force Station</a> with <q>consoles and large Photographic Display Unit display, which was projected from above.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Group computing.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What you can see is ten men sitting around a <a href="https://en.wikipedia.org/wiki/Photographic_Display_Unit">Kelvin Hughes Photography Display Unit</a> – a large screen for displaying graphics and characters. The third floor of a SAGE direction center: <em>The Pit.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Each of the men (yes all men) has their own computer console at their desk. But they’re working together around the PDU. One of the men is holding what is either a light gun or a laser pointer/equivalent. They’re assessing potential threats and ordering missiles and bombers. Together.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Here’s a great article about the physical architecture of SAGE: <a href="https://www.thedrive.com/the-war-zone/26959/the-futuristic-cold-war-era-sage-air-defense-bunkers-looked-right-out-of-a-kubrick-film">The Futuristic Cold War Era SAGE Air Defense Bunkers Looked Right Out Of A Kubrick Film</a>.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So we’ve got a system here in the 1950s which is on some axis <em>more sophisticated</em> than the rooms with similarly large yet typically less intelligent screens that I regularly sit and have meetings in, seven decades later.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This isn’t a setup for presentations and discussions. It’s for collaboration and action. The whole room is an <em>environment</em> for the team to work.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And I often, often wonder this:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">WHAT IF, instead of the Personal Computer, the dividend of SAGE had been the Team Computer?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A computer that wasn’t used individually but as a group, together in a room or perhaps remotely. Not desktops but environments. An alternate history of computing that doesn’t involve user IDs or ownership as primary concepts but is instead oriented around collaborative, co-created artefacts, spaces that are jointly inhabited. It’s hard to mentally unfold such a world, from such different initial conditions, imagining its progress lensed through Microsoft Office analogues, video games analogues, World Wide Web analogues, over such a stretch of time.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It would look something like <a href="https://dynamicland.org">DynamicLand</a> but with decades of evolution. We got just a glimpse of the path.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/computing-history">computing-history</a>
+          (8 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/multiplayer">multiplayer</a>
+          (28 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2022/11/04/somaforming">These robot legs are made for walkin’ me to the shops</a>
+        (4 Nov 2022)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2023/01/20/map_room">The map room is a physical room-size wiki for collaboration from the 1950s</a>
+        (20 Jan 2023)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2021/12/21/sage">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. art" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

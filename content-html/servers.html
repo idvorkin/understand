@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>I wish my web server were in the corner of my room (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2022/10/10/servers">
+
+<meta property="og:title" content="I wish my web server were in the corner of my room">
+
+<meta property="og:description" content="Posted on Monday 10 Oct 2022. 1,417 words, 11 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2022/10/10/servers.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2022-10-10T20:39:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">I wish my web server were in the corner of my room</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    20.39, Monday 10 Oct 2022
+    <span class="nowrap">
+      <a
+        href="/home/2022/10/10/servers"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">Back in college I used to run part of my website from a Linux box in my room. I made it into a speech synthesiser, and people could connect to the machine to talk into my flat.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Retrospective apologies to my flatmates.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This is way back in 2000 so before smartphones, and before texting, and before always-on internet (college was an exception), and before camera phones or being able to reliably email photos let alone video. Decent text-to-speech still felt novel. We had a friend who was travelling in Australia at the time and he would visit internet cafes and type in messages to talk to us. Of course there was no way of talking back. It felt impossibly magical.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But what I remember feeling most magical was the idea that there was somebody <em>visiting</em> that server on my desk. There was somebody coming from a long way away and going <em>inside.</em> An electronic homunculus.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I could hear the hard drive spin up if somebody accessed the machine, and a little <em>chug-chug-chug</em> while Festival (the open source text-to-speech engine I’d installed) generated the voice. Like footsteps approaching before the door opens.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">I can have this experience again!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I was chatting with artist <strong>honor ash</strong> the other day.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Their <a href="https://hnr.fyi">website</a> (and also <a href="https://thoughts.hnr.fyi">blog</a>) runs on a Raspberry Pi sitting in a corner in their house.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This feels very important.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">First there’s the feeling of <em>“I made that!”</em> which leads to the feeling of <em>“I can make all kinds of things!”</em> You will definitely get that more when you install the software on the web server yourself, and also when you copy over your own hand-coded text files. (The web is just text!)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then there’s the feeling that people are visiting and - the corollary - if other people’s experience of your website is just in that tiny box, then <em>your</em> experiences of all <em>other</em> websites are similarly physically located in boxes too.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">If you have a local web server then you can play music into your space.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Karey Helm’s old website, <a href="/home/2015/02/26/coffee_morning">back in 2015</a>:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">…the portfolio on her website offers Party Mode. Click the button at the bottom of the page, and mouse over the various projects - the page becomes an instrument, it’s like a synth! And then, I swear I heard this right, when you use Party Mode, there’s an Arduino in her studio that plays the music.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Once again I am desperate to have this for myself.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">ALSO: <a href="/home/2022/09/01/carbon">those solar-powered websites</a>. I can totally visualise the photovoltaics on the website owner’s balcony in Barcelona whenever I read an article there.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>I will also say that it feels transgressive.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It is boundary-violating, to have a website in the corner of your bedroom. Websites are meant to be in the cloud. Eternal, somehow, transcendent, like the voice of code floating down from the sky. But no, there it is. It is real! I can kick it! <em>Argumentum ad lapidem.</em></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">The discombobulated feeling is not new. Seeing a server felt weird even before the cloud.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Julian Dibbell’s <em>My Tiny Life</em> was written in 1998 about multiplayer text adventures - early virtual worlds - and it is one of those books that has abruptly become insanely relevant. Chapter by chapter it goes through identity play (and abuse), cybersex, money, community governance, power, doxing, and the odd existential self-obsessed angst that all online communities seem to journey through.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The system in which Dibbell is hanging out is called LambdaMOO, and there’s a passage in which he visits the server.</p>
+<blockquote cite="http://www.juliandibbell.com/texts/mytinylife.html" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Julian Dibbell" data-title="My Tiny Life (1998)">
+<p class="measure-wide f6 f5-l lh-copy black-80">The_Author looks at The Server.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">look server</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The Server</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You see a box as unremarkable as any other in this room, only more so. Three feet square by one foot high, some cables slithering out the back, no flickering lights or any other outward indication of activity within. The box sits at about knee level, stacked unceremoniously on top of another one just like it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The_Author has come 3,000 miles to look at this machine.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Julian Dibbell, <cite><a href="http://www.juliandibbell.com/texts/mytinylife.html">My Tiny Life (1998)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">(That link leads you to the full text, but you should <a href="https://www.amazon.co.uk/My-Tiny-Life-Passion-Virtual/dp/1841150576/">buy the book</a> <em>(Amazon)</em> and I don’t know just sit by the letterbox until it arrives and then INHALE it.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Dibbell is underwhelmed… and yet still holds onto his fantasy:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">The_Author realizes now that during all those months he never really doubted LambdaMOO was in this box, compact, condensed, its rambling landscapes and its teeming population all somehow shrunk down to the size of The Server’s hard-disk drive.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">I can relate! I can relate!</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Seeing your website’s actual server is the virtual equiv of the <a href="/home/2021/07/20/overview_effect">Overview Effect</a> and I want to have that feeling the whole time!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I want to feel like my room is haunted by miniature cyberghosts whenever someone reads my blog!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I want you to have that feeling too. I think it would change how we think about the internet, in a grounding and healthy way. I think it would help us regain a sense of agency and ownership, with which we would be way more demanding of the sort of internet we want to live with, a sense that is currently so distant from us that we have forgotten it is possible and can’t even tell that it is missing.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">So… practically: how to achieve this in 2022?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Having a Raspberry Pi serving a website at home is relatively straightforward with a bit of work, I know.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But I would also like it to be reliable if I kick a cable out of the wall, or in the unlikely event that I get a bunch of traffic. I’d also like it to be quick!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Oh, and I don’t want to have my home network hacked.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Perhaps there’s a way to host my website at home, but have the static bits served by Cloudflare if the Raspberry Pi isn’t available <em>(using a global CDN as a UPS),</em> and the dynamic bits always visit my home – but there’s a graceful <em>“come back later”</em> message if the Pi is down?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m pretty technically capable but I’m not sure I can be bothered.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There are so many things in the way. Getting a routable IP address at home. Making it secure. Monitoring it. Gracefully stepping up and down from the CDN.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I would <em>love</em> a turnkey way to home-host.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Here’s the BIG question: even if it works as above, it’s still a bit of a hacky compromise to have my web server sitting on a shelf. How could it be easier than a monthly rental fee for cloud hosting? How could it be <em>extra?</em> Sure, ambient beats playing into my home office when somebody visits this blog… but what else? There’s a project here.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Update 12 Oct:</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This post made it to the top of Hacker News and stuck around for a bit. Blimey, hullo! <a href="https://news.ycombinator.com/item?id=33165836">Here are the comments</a> (367 right now). Some lovely anecdotes there. Here’s a favourite:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">I had a URL on my website called moo.html that wasn’t indexed. My friends had it bookmarked, and when they visited it they got a picture of a cow, but it played a cow mooing in my bedroom. It was a nudge to come online and be social.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">That’s it! Mixing up the boundary between virtual and physical.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I don’t think it’s just nostalgia (that’s something that came up on Hacker News and also the <a href="https://twitter.com/intrcnnctd/status/1579558673499951105">replies on Twitter</a>). It should be <em>easy</em> to have a publicly accessible webserver at home with a bolt-on cloud-based load balancer in the event that I get a burst of traffic or my home internet goes down. And there’s no reason that should be any less reliable or straightforward than hosting in the cloud. There’s nothing intrinsically hard about it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Clarifying what easy means: easy means straightforward tools that work well together, and config files that keep the same format for a decade+. Command line beats GUI because I can keep notes and config in git.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Why? Because being in the same room as your server will open up new opportunities. Playful ones at first and then… who knows what? My own bookshelf Raspberry Pi <a href="https://www.instagram.com/p/B_XYXJOJe3r/">has an e-ink clock on it</a> so perhaps I’ll use that as a little window to show me visitors.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Oh hey, I found my original blog post with the embedded form that spoke words into my flat. The form doesn’t work now of course, but here it is for posterity, <a href="/home/2000/05/09/im_hearing_voices_in_my_flat">way back in May 2000</a>.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2022">20-most-popular-in-2022</a>
+          (20 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/5-most-popular-in-2022">5-most-popular-in-2022</a>
+          (5 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/sound-and-music">sound-and-music</a>
+          (17 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2022/12/21/top_posts">My most popular posts in 2022 and other lists</a>
+        (21 Dec 2022)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2022/12/30/reading">What I’ve been reading in 2022</a>
+        (30 Dec 2022)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2022/10/10/servers">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. cyborgs" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>How I would put voice control in everything (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2020/05/26/voice">
+
+<meta property="og:title" content="How I would put voice control in everything">
+
+<meta property="og:description" content="Posted on Tuesday 26 May 2020. 1,064 words, 8 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2020/05/26/voice.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2020-05-26T20:18:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">How I would put voice control in everything</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    20.18, Tuesday 26 May 2020
+    <span class="nowrap">
+      <a
+        href="/home/2020/05/26/voice"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">Why can’t I point at a lamp and say <strong>“on”“</strong> and the light come on? Or point at my stove and say <strong>“5 minutes”</strong>? Or just <em>look</em> at it and talk, if my hands are full.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I speculated about voice-controlled lightbulbs and embedded machine learning on stage last year at Google’s <a href="https://pair.withgoogle.com/events/symposium/">People &amp; AI Research symposium</a> <em>(there’s a link to a video on that page)</em> and was reminded about it the other day when <a href="https://twitter.com/v21/status/1264893090743058438?s=21">George Buckenham tweeted</a> <q>as someone who already owns an Alexa, I would buy a device that doesn’t do any cloud processing, but does allow you to set kitchen timers with your voice and play songs from Spotify</q> – which is basically all I do with Siri too, and this is <em>kinda</em> what I want too…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">…only not a single device, I want voice control in everything, but individually. And really, <em>really</em> basic.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Because it <em>is</em> really appealing to me to turn on a light, set the stove timer, play music, pause the TV, snooze an alarm etc just by saying something. What’s <em>not</em> cool is</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">having a device in my home that harvests every sound in the house and sends it to cloud servers for eternal recording, or not, who knows and that’s the point – an audio <a href="https://en.wikipedia.org/wiki/Panopticon">panopticon</a> dressed in plastic</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">needing to remember arcane vocal syntaxes</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">latency.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">And all of that aside, voice assistants are still all <a href="https://daringfireball.net/2020/05/what_time_is_it_in_london">more or less rubbish</a>.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">So how should this work?</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">Do less. Do it really well. Reduce cognitive friction.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Make a lightbulb that you can say <strong>“on”</strong> and <strong>“off”</strong> to:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I was struck to learn that the iPhone’s <em>“Hey Siri”</em> feature (that readies it to accept a voice instruction, even when the screen is turned off) is a <a href="https://machinelearning.apple.com/2017/10/01/hey-siri.html">personalised neural network that runs on the motion coprocessor</a>. The motion coprocessor is the tiny, always-on chip that is mainly responsible for movement detection, i.e. step counting.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">If that chip hears you say “Hey Siri”, <em>without hitting the cloud,</em> it then wakes up the main processor and sends the rest of what you say up to the cloud. This is from 2017 by the way, ancient history.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So, commodity components time: here’s the <a href="https://www.onsemi.com/products/audio-video-assp/audio-dsp-systems/belasigna-r281">BelaSigna R281</a>, an ultra-low-power (300 micro watts, mic not included) chip that <q>is “always listening” and will detect a single, user-trained trigger phrase, asserting a wake-up signal when this trigger phrase is detected.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A embeddable wake-word detector! Let’s stick it in a lightbulb! A radio! A desk fan!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So how would a device with this simple word detector know when to pay attention? Some wild speculation…</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">an on-chip, low power image sensor – a MEMS camera maybe? With the added ability to…</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">detect <strong>glances</strong> – detecting the whites of our eyes in a busy image by limited compute is basically what the whites of our eyes are there for</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">detect <strong>pointing</strong> – harder, but <em>(waves hands)</em> machine learning??</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Bonus points: do all of this with <strong>energy harvesting,</strong> so no batteries, and zero power on standby.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Look, my point is that this is not beyond the reach of very clever people with computers. Stick a timer in my stove, a switch in my light bulb, give each a super limited vocabulary, never connect to the internet, and only act when somebody is addressing you.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Which, in turn, gets rid of the complicated set-up and addressing interaction design issues of centralised voice assistants. No more “front room lights: lamp 1 turn on” because… you just look at it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And <em>also</em> gets rid of the need to add expensive connectivity (and set-up, and security patches…) in every stove and light, and the need to convince every manufacturer to support the latest control protocol because… you just look at it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And, <em>ALSO</em> also, by simplifying but spatialising the available grammar, the voice interface will be easier to learn, more reliable to use, and easier for normal humans to combine.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And yes, given this leeway, different manufacturers will go in slightly different directions. But net-net I bet that the overall simplicity is improved versus the current approach of attempting to make standardised interfaces for <em>classes</em> of products that have to be tweaked case by case to properly fit.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s a classic <a href="https://www.jwz.org/doc/worse-is-better.html">worse is better</a> approach.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Why are we stuck with portals for voice?</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">And the reason it doesn’t work like that already, and why we’re stuck with dedicated, centralised voice assistants that need to bounce a signal off a data centre on the freaking Moon <em>(not actually the Moon)</em> to set a timer? Well, I can imagine a few possibilities…</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Cynically: every big tech company wants to “own” voice interactions, and be a gatekeeper to all smart devices for STRATEGIC REASONS, which is daft because trying to own an entire interaction model like that is like saying “ok let’s own buttons”.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Dealing with voice is sufficiently complex that you need giant cloud servers to do it, and the code requires such frequent updating that device-embedded detection doesn’t make sense. I’m not sure this is the case any longer, and besides, that’s what over-the-air Bluetooth updates are for.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Centralised voice assistants allow for more complex use cases, such as orchestrating different devices, and interacting with cloud services. Such as: if the traffic is heavy this morning, turn on the lights 20 minutes earlier.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">I think that last point is probably what’s going on. I get it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">BUT</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There’s <a href="https://en.wikiquote.org/wiki/John_Gall">that line from John Gall</a>: <q> A complex system that works is invariably found to have evolved from a simple system that worked.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So let’s get the basics right first, then layer orchestration and all the advanced stuff etc on top?</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Here’s the boil-the-ocean approach</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">If I had all the VC money in the world, I would manufacture and sell standardised components – they would connect and <em>act</em> identically to mechanical buttons, switches, and dials, only they would work using embedded ML and have voice, gaze, and pointing detection, for interaction at a distance.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The goal would be to allow manufacturers of <em>every</em> product to upgrade their physical interfaces (add not replace ideally), no matter how trivial or industrial, no matter how cheap or premium. And, by doing that, discover what new possibilities are uncovered when when you don’t force every voice interaction through a single model, that of requiring an internet-connected, consumer-friendly, device for the home.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Anyway.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2020">20-most-popular-in-2020</a>
+          (20 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/speculative-in-2020">speculative-in-2020</a>
+          (18 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/yes-to-interoperability">yes-to-interoperability</a>
+          (4 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2020/08/26/adaptive_design">Revisiting Adaptive Design, a lost design movement</a>
+        (26 Aug 2020)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2020/09/18/non_extractive_economy">Hints towards a non-extractive economy</a>
+        (18 Sep 2020)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2020/12/11/thingscon">The hard work of imagining, ThingsCon 2020</a>
+        (11 Dec 2020)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/03/12/pointer_control">An eyebrow raise means left click</a>
+        (12 Mar 2021)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/03/18/work">Work: Availability from July</a>
+        (18 Mar 2021)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/05/28/archives">From the archives, w/e 28 May</a>
+        (28 May 2021)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2023/01/12/next">Looking for new projects or even a long-term something for 2023</a>
+        (12 Jan 2023)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2023/01/26/room">Rooms, voice, gestures, and why Apple HomePod hasn’t quite clicked for me</a>
+        (26 Jan 2023)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2023/11/10/hunches">An AI hardware fantasy, and an IQ erosion attack horror story</a>
+        (10 Nov 2023)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2020/05/26/voice">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. books" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

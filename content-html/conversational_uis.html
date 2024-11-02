@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>On conversational UIs (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2015/06/16/conversational_uis">
+
+<meta property="og:title" content="On conversational UIs">
+
+<meta property="og:description" content="Posted on Tuesday 16 Jun 2015. 2,367 words, 41 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2015/06/16/conversational_uis.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2015-06-16T17:02:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">On conversational UIs</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    17.02, Tuesday 16 Jun 2015
+    <span class="nowrap">
+      <a
+        href="/home/2015/06/16/conversational_uis"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">1.</h3>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">When trumpets were mellow</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And every gal only had one fellow</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">No need to remember when</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">‘Cause everything old is new again</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">– <a href="http://genius.com/Peter-allen-everything-old-is-new-again-lyrics">Peter Allen.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Stand back folks. I’ve not spent any time editing and now I’m going out. This is stream of consciousness, and it’s <em>long.</em></p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">2.</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">There’s that bit in the great article on <a href="http://dangrover.com/blog/2014/12/01/chinese-mobile-app-ui-trends.html">Chinese mobile UI trends</a> about how there are no websites, there’s just messaging. And not only that, some weird mish-mash of talking robots and customer service people:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">Many institutions that otherwise would have native apps or mobile sites have opted instead for official accounts. You can send any kind of message (text, image, voice, etc), and they’ll reply, either in an automated fashion or by routing it to a human somewhere. The interface is exactly the same as for chatting with your friends</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">You know, and why the hell not. I have one language to use with apps (pointing, tapping, swiping) and another with my friends (chatting). Why not chat with my apps too?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So as Benedict Evans - mobile and technology analyst extraordinaire - points out, <a href="http://ben-evans.com/benedictevans/2015/3/24/the-state-of-messaging">messaging is the new app platform:</a></p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">[In WeChat, in China] You can send money, order a cab, book a restaurant or track and manage an ecommerce order, all within one social app. So, like the web, you don’t need to install new apps to access these services, but, unlike the web, they can also use push and messaging and social to spread.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">The other piece of the puzzle here, Evans continues, is the smartphone notifications panel:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">That pull-down panel aggregates activity from everything on your phone, and Google and Apple have made notifications actionable and given them payloads. … More and more, one’s primary interaction with any app, social messaging or otherwise, is a little pop-up with a button or two.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">So I’ve long been interested in the idea that “next actions” should float away from their apps and come together in a single place… <a href="http://berglondon.com/blog/2008/02/06/snap/">SNAP was my 2008 take on this.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But I guess the 2015 twist is that everything old is new again, and we’re dealing not just with actionable notifications, but robot-generated text that we can have an actual conversation with.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Which is Twitter’s fault.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Nowhere is it more evident that <a href="http://www.ftrain.com/wwic.html">The Web is a Customer Service Medium.</a> Just look at <a href="https://twitter.com/AskNationwide/with_replies">@AskNationwide</a> (with replies) or <a href="https://twitter.com/British_Airways/with_replies">@British_Airways</a> (with replies). It’s all conversations with customers.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The canonical automated version of this is @andy_house (2009), aka <a href="http://stanford-clark.com/house_that_twitters.html">the house that twitters</a>, or see <a href="http://www.technologyreview.com/news/514941/home-tweet-home-a-house-with-its-own-voice-on-twitter/">House of Coates</a> for a more up-to-date take on the tweeting smart home.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Now imagine it wasn’t just an activity feed, but you could talk back.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A big bit of the current excitement is the <a href="http://www.theverge.com/2014/8/12/5991005/slack-is-killing-email-yes-really">rise of Slack for workplace comms</a> and its <a href="https://api.slack.com/bot-users">embrace of bots.</a> Which takes us to Ben Brown’s insanely incredible insight: <a href="https://medium.com/why-not/what-will-the-automated-workplace-look-like-495f9d1e87da">What happens when you start automating workplace processes?</a></p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">What if there was a meeting runner bot that automatically sent out an agenda to all attendees before the meeting, then collected, collated and delivered updates to team members? It could make meetings shorter and more productive by reducing the time needed to bring everyone up to speed.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">We’ve just been through an era where management has been regarded as the essential scarce resource of a business, and operations and technology are functions to be outsourced to fungible workers like so many cogs. But what if the core business resource is human ingenuity, and it’s management that can be turned into software… automated and optimised?</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">3.</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://digit.co">Digit</a> is an automated savings tool: <q>Every few days, Digit checks your spending habits and removes a few dollars from your checking account if you can afford it.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The kicker: You communicate with it via text message (“Great, I’ve moved $10.00 to digit”), they have no plans for an app. And what’s interesting to me is that it has adaptive behaviour… and maybe because of the text message interface, <a href="http://www.theverge.com/2015/2/19/8064431/digit-is-the-automated-savings-plan-we-ve-been-waiting-for">this Digit review</a> semi-anthropomorphises the software:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">At first, Digit was really cautious with my money … But over the next couple weeks, as my balance recovered from holiday spending, it got a bit more ambitious</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Software isn’t “cautious” or “ambitious”, those are qualities of alive beings. But maybe it serves us to think so.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://walkadoo.meyouhealth.com">Walkadoo</a> is a walking game that encourages activity; you communicate with it by text message. Related: <a href="http://myautom.com">Autom</a> is a robot weight-loss coach with big blue eyes. You lose more weight because you regard it as having a mind.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.getrhombus.com">Rhombus</a> is an e-commerce platform for shop to chat with customers by text message… and also accept payments, within the conversation. Related: <a href="https://blog.twitter.com/2014/testing-a-way-for-you-to-make-purchases-on-twitter">Twitter’s in-feed Buy Now button</a> which is a game changer if widely rolled out.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">4.</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">One of the problems with text interfaces is text entry. Keyboards suck, especially on mobile devices. Typing also introduces a discoverability question: How do you know what words are valid right now, or the right grammar to use? How do you make complex statements?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">In the game <a href="http://time.com/3850243/lifeline-apple-watch/">Lifeline</a> (iPhone/Apple Watch) you’re texting an astronaut called Taylor who is marooned on a moon. It works in real-time… when Taylor hikes to a location an hour away, you won’t hear from her till she gets there. You text back, but it’s not free text entry, you only get two options at a time. Works well on the smartwatch too.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Despite the constrained responses, it still feels conversational. Enough that the first time I killed Taylor - by freezing to death based on advice I’d given - well, ooof.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Lifeline</em> was prototyped in <a href="http://twinery.org">Twine</a>, the visual programming language for writing interactive fiction. See also <a href="http://inform7.com">Inform 7</a> where the code-behind-the-fiction reads like a book but every word has its code-meaning too, like casting a spell in a stupid universe, like talking to a golem. <a href="http://inform7.com/learn/eg/rota/source_20.html">e.g.:</a></p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">The dark doorway is an open door. “The doorway looks ordinary enough, but it’s so difficult to be sure with the unaided eye.” The dark doorway is scenery. The dark doorway is not openable. The dark doorway is west of Longwall Street and east of Turret Roundhouse. The dark doorway is trapped.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Another take on text input:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The web-based game <a href="http://adarkroom.doublespeakgames.com">A Dark Room</a> (also <a href="https://itunes.apple.com/gb/app/a-dark-room/id736683061?mt=8">available for iPhone</a>) is astounding. Half text adventure, half point-and-click. There’s something about clicking <q>stoke fire</q> and the words turning into a progress bar while the fire burns down… The communication of the element of time.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="http://thenextweb.com/apps/2015/06/01/m-o-n-k-e-y/">Hangkeys</a> is a neat hack – it’s a custom iPhone keyboard that makes it super easy to play Hangman over SMS, Whatsapp, or other text message services.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://sunrise.am/meet/">Meet by Sunrise</a> is a custom smartphone keyboard that integrates with your calendar: Instead of typing times and locations, you tap them instead.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://medium.com/@mg/there-s-a-chat-for-that-apple-s-biggest-platform-opportunity-yet-19d5b1870857">Matt Galligan imagines tap-able buttons in text messages:</a> <q>What if instead of installing an app, we might instead allow a service to chat with us via iMessage?</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Writing code… <a href="http://www.globalnerdy.com/2014/06/03/swift-fun-fact-1-you-can-use-emoji-characters-in-variable-constant-function-and-class-names/">Swift allows emoji for variable names.</a> There’s something interesting about this. Variable names like “a” or “theCounter” or “dimensions” are meaningful… but what about underlying feelings they carry? The “ii” counter of a tight inner loop always has a zing for me, it’s the twang of high-tension power lines.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So can emoji carry more meaning, or meaning along a different axis? What could we use this for – instead of “houseAddress” just have a picture of a house; instead of saying errorDescription just use <a href="http://emojipedia.org/pile-of-poo/">smiling pile of poo</a> emoji.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">5.</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">I was noodling with conversational UIs in 2002, back when AIM was a thing. <a href="http://interconnected.org/home/2002/04/23/work_thats_currently">What preoccupied me then</a> - and what interests me most now - is how to make an automated conversation with a bot not boring, and (more importantly) not shit.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So one of the things I found before: The more the bot acts like a human, the more it will be treated like a human. And the more that happens, the more likely the bot will have to say “I don’t know what you mean”… which is lame.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Our guiding light is <a href="http://demos.jellyvisionlab.com/downloads/The_Jack_Principles.pdf">The Jack Principles</a> from the 1995 quiz show video game <em>You Don’t Know Jack.</em> In short, how to direct the conversation so a user will never be in a position to ask a question the machine can’t answer.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(<a href="http://berglondon.com/blog/2010/12/10/conversational-ui-a-short-reading-list/">Tom Armitage collected a link to this and more</a> when he ran a chatbot project at Berg back in 2010.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Something else surprised me about authoring conversations, something almost contradictory…</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Leading a user through a conversation by the hand is great… once. It’s like a <a href="http://www.letsconsider.us">phone tree</a>: a branching tree of questions and multiple choice answers where nothing can go wrong. But if the user wants to change their answer, compare different possibilities, or run through the conversation a second time: It’s tedious and frustrating.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">But the alternative is a wide open space: The user can say anything, and it’s up to the bot to interpret and respond. However that introduces a discoverability problem. You can be chatting to your bot about what’s on TV tonight, completely unaware that it also knows what movies are showing nearby. Or let’s say you do ask about movies, and then you say “well how do I get to the theatre?” and suddenly it’s dumb again. Using Siri is often like that.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">I guess what I’m asking is how does a user have a <a href="https://en.wikipedia.org/wiki/Theory_of_mind">theory of mind</a> about a bot - a conception of its stance, intentions, domain of knowledge, etc - and how is that communicated.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My take <a href="http://interconnected.org/home/2003/02/11/at_the_simplest">back in the day</a> was to organise knowledge into domains, within which a tree structure would be possible but avoided. To summarise how it worked:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">I built an AIM bot called <em>FingertipTV</em>. You could traverse it like a tree: “now” (reply: “a list of channels and what’s on now”), “bbc1” (reply: now and next for BBC1), “9pm” (reply: what’s on BBC1 at 9pm and the following show)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Resolution varied. “now” would result in a list of every channel but just the show titles (and you could hit a number to get the full description). Getting more precise with the channel and “9pm” would show a full show description.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Once you’d learnt the vocabulary, everything allowed shortcuts: The user could gradually become virtuoso. So the previous exchange could be replaced with “bbc1 9pm”</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">There was a limited amount of history. So saying “bbc1” then “later” would show what was on BBC1 later… but saying “bbc1”, “9pm”, “channel4” would show Channel 4 right now. The 9pm itself was forgotten. Use any excuse to limit the memory of the bot, because that constrains what the user has to hold in mind</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">I added functionality to search movie listings… but encapsulated that in another AIM bot called <em>Cinebot.</em> If you asked about movies to FingertipTV, you’d get the reply “I can’t help you but my friend can,” and Cinebot would reach out and start a new conversation. Now you’d met Cinebot, and could add their name to your buddy list. Small, understandable, almost-stateless bots that talk to you and to each other</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">My point, I guess, is that <a href="https://medium.com/@jkalven/the-house-that-fish-built-1cc10349ae8d">a new medium needs a new grammar</a> and conversational UIs are definitely a new medium.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">For one – they’re intrinsically social. If I’m chatting with a bot in iMessage about what movies are on nearby, shouldn’t I be able to turn that into a group chat with my partner? And does the bot conduct two separate conversations, one with each of us, or assume we’re both searching for the same movie?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">We’ll need app frameworks to help author these bots, and the frameworks will make assumptions about how conversations work in small groups.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And you know what, we’re <em>still</em> in the PC era, the era of personal computing. We don’t really know how to use computers in small groups, how to use interfaces collaboratively.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Another big question for me is what happens when we have <em>many</em> of these bots…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">How do traverse multiple knowledge domains, discovering features and adapting how we speak as we go? Is it going to be like FingertipTV and Cinebot, loosely coupled domains of differing knowledge and vocabulary? Or more like <a href="https://en.wikipedia.org/wiki/Siri">Siri</a> where the same voice can tell you everything from “directions home” to “how long do dogs live” (to pick two examples that it’s giving me right now).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Maybe it will be like Twitter, where everyone I follow is in a single stream – but I miss what they’re saying? Or like my apps on my phone, where many apps have their own activity stream… and they fight so hard to get heard that they constantly spam my notifications panel?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My head goes somewhere quite speculative,</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">and that’s text adventures.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Dan’s story, <a href="http://www.upsideclown.com/2002_02_07.shtml">Text Only</a>:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">What now? &gt;</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>N.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You go North</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The batteries on your Discman are almost depleted.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Or Julian Dibbell’s memoire <a href="http://www.juliandibbell.com/mytinylife/tinyspiel.html">My Tiny Life</a>, a tale of LambdaMoo, a collaboratively built text environment inhabited by objects, bots, and people.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There’s a strength in spatialising information – of arranging these bots - these domains of knowledge and differing patterns of interaction - into a web, or on a map. Some bots are closer to other bots.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So part of me wonders… what if I saw the activity feed from my smart home all together in one place, and then when I went <em>north</em>, say, that would be the activity feed from my social networks. Or instead, in my smart home I’d find my TV, and inside that we could have a chat about what’s being tivo’d tonight.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I don’t want to be too literal. But maybe we need an architecture to arrange all these bots and feeds and conversations, etc. And while our experience of the conversations will vary (we’ll be friends with different bots) the architecture will be shared: Arbitrary, but shared. A <a href="http://www.goodreads.com/quotes/14638-cyberspace-a-consensual-hallucination-experienced-daily-by-billions-of-legitimate">cyberspace:</a></p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">A consensual hallucination experienced daily by billions of legitimate operators … [a] representation of data abstracted from banks of every computer in the human system. </p>
+</blockquote>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">6.</h3>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">And don’t throw the past away</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You might need it some other rainy day</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Dreams can come true again</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">When everything old is new again</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">When everything old is new again</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I might fall in love with you again</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">EOM</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">ps. <a href="http://interconnected.org/home/2015/06/28/more_on_conversational_uis">More on conversational UIs.</a></p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2015/06/28/more_on_conversational_uis">More on conversational UIs</a>
+        (28 Jun 2015)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2015/10/14/twitter">Why I’m bullish on Twitter</a>
+        (14 Oct 2015)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2015/11/25/like_to_continue">Like to Continue, a fictionbot</a>
+        (25 Nov 2015)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/06/18/archives">Previously: Spreadsheet parties, chatbots, William Gibson’s jacket (w/e 18 June)</a>
+        (18 Jun 2021)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <div class="mt6 mb3"></div>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. dolphins" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

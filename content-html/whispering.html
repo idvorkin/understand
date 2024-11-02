@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Prompt engineering and prompt whispering (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2023/07/07/whispering">
+
+<meta property="og:title" content="Prompt engineering and prompt whispering">
+
+<meta property="og:description" content="Posted on Friday 7 Jul 2023. 1,264 words, 5 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2023/07/07/whispering.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2023-07-07T12:16:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Prompt engineering and prompt whispering</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    12.16, Friday 7 Jul 2023
+    <span class="nowrap">
+      <a
+        href="/home/2023/07/07/whispering"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">Hi Sid</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Thanks for your message!</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>I was wondering if you could tell me what you see as the distinctions between prompt whispering and prompt engineering.</em></p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">I guess it’s two questions isn’t it: if there’s a difference and, if there is, whether it’s useful to make it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Prompt engineering</strong> I see as treating prompts like Lego, and being <em>able</em> to treat prompts like Lego, and all that requires.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">For example I’m working with one startup (code named <em>Austin)</em> and we’re using a large language model (GPT-3) as an agent to talk a user through various tasks.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It can perform other functions aside from speaking to the user: it can write to a persistent log book for example. It needs to be reliable and to have the same “personality” throughout.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So there’s an architecture to the prompts. One part to set the tone, another to set the output format, another to set up a “chain of thought” pattern (because the result is better that way), another to set the available functions and how they’re used. Then each task is its own sub-prompt, dynamically inserted as appropriate, each with its own goal and instruction sequence. This keeps overall prompt complexity low and prevents instruction drift. The agents jump between these constructed prompts as it jumps between current tasks.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Ideally the sub-prompt parts would be semantically isolated, like blocks of code, but the nature of things means that they’re not. If the personality of the agent is wild and quirky then that’s going to escape the vibe scope and contaminate behaviour in, say, the part of the prompt that insists on a particular structured output.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then, because it’s engineering, you need observability and logging and tracing for debugging. And also, because this is a team sport, you need tooling and jigs so that others can compose their own prompts out of your kit of parts and see what happens, or for them to tweak the wording and A/B test the result.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And we haven’t even got into the overall AI system, chaining together different prompts with semantic search or database lookups and API calls, or fine-tuning an LLM, or whatever.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I think it’s the need for composability and reliability at scale that means this slots into the <em>software engineering</em> mould, hence “prompt engineering”. Though whether the term is around for the long term, who knows? I remember when even tiny startups would have a dedicated database administrator to tune the database, write SQL and optimise queries, and so on, and is “DBA” still a commonplace role? Not really.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Then there’s <strong>prompt whispering</strong> which is a bit of a gag I admit. I first used it pre ChatGPT in the context of image synthesis, <a href="/home/2022/06/02/dalle">in June 2022</a>:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><q>What’s happening is a new practice of prompt engineering – or rather let’s call it prompt whispering. Prompt whisperers have a sophisticated mental model of the AI’s dynamic behaviour… or its psychology even?</q> – and I don’t know whether I’d put it in quite those terms today, then again maybe it’s close enough.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(btw I doubt that I coined the term. I didn’t consciously borrow it from anywhere specific - it felt new to me - but also I feel like it was in the air. There’s also my follow-up short story, <a href="/home/2022/08/03/whisperer">The Prompt Whisperer</a>.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m currently solving <a href="https://www.braggoscope.com">Braggoscope</a>‘s errors in classifying episodes by Dewey number by asking the LLM to give its rationale for the classification in the JSON property immediately preceding the number itself. Accuracy has improved. That feels more like whispering than engineering.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Another example: I was in a workshop recently with a team learning how to prompt images. Their first attempt read more like a Google query… and the results were not quite assinine but straightforward. Next we asked an LLM to describe a potential image in great detail, what I’d call an open prompt, then fed that into the image generator – the results were generative, something our imaginations could bounce off.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Now I don’t mean to say that prompt whispering is “creative” necessarily. It’s not the opposite of prompt engineering. It’s maybe the difference between software engineering and hacking? A great hacker can coax the machine into doing something that others can’t.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s a deft turn of phrase or a nudge with a single word that has a disproportionate effect on the output. It’s a sensitivity to when prompting the model feels like you’re at a divergent, unstable point with respect to user input - a saddle point in latent space - and how to concisely solve for that. (For example: sometimes when you ask an LLM to output JSON, sometimes it’ll do that consistently as you change parameters, and sometimes it’ll be buggy. Don’t just use regenerating guardrails on the output if the latter happens, that’s a brittle fix. Rethink the approach instead.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s being an <a href="/home/2023/03/22/tuning">AI sommelier</a> of different models, and having particularly good hunches about what words are likely to lead to what desired results.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Now the reason I feel like “prompt whispering” might be an overblown phrase is that it’s just a knack. Being a horse whisperer means that you have a deep and almost psychic empathy with horses. Being a prompt whisperer on the other hand is only like being good at Google or effective at looking stuff up in libraries using index cards or knowing how to avoid asking leading questions when you are cross-examining a witness.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Yet… there is an intuitive component here? And people can indeed be noticeably better and worse at prompting? The knack is in some part innate, in some part trainable, and in some part reliant on personal mental models of how LLMs work – whether or not those mental models are connected with the true technical foundations.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And yes it does lend itself well to creative outputs, but it’s not limited to that.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Is it <em>useful</em> to have these overlapping but different concepts of engineering and whispering?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I think so. It feels pretty likely that prompting or chatting with AI agents is going to be a major way that we interact with computers into the future, and whereas there’s not a huge spread in the ability between people who are not super good at tapping on icons on their smartphones and people who are, when it comes to working with AI it seems like we’ll have a high dynamic range. Prompting opens the door for non-technical virtuosos in a way that we haven’t seen with modern computers, outside of maybe Excel.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(And outside creative software and video games, and I’m sure I’ll think of more exceptions… the day-to-day and business computing “world” then.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Giving this trainable knack a name, however tongue in cheek, makes it a skill we can work to develop: what would a class in prompt whispering look like?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Divorce yourself from the need to say that an LLM is “just” an autocompleting stochastic parrot, and allow yourself to riff off the <a href="https://www.lesswrong.com/posts/D7PumeYTDPfBTp3i7/the-waluigi-effect-mega-post">Waluigi Effect</a> because although it might not be “correct” to say that an AI model is a superposition of simulated realities, sculpted down by the prompt, you can personally get better results to take that perspective.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Large language models hate this one weird trick.</em></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Anyway.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Best of luck completing the rest of your GenAI textbook, and I’m glad to hear that you’re considering including prompt whispering in addition to the more industry-normal prompt engineering.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Please do send me a copy of the chapter when you’re done! I’d be happy to offer comments on your next draft if that would be useful.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Best</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Matt</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2023">20-most-popular-in-2023</a>
+          (20 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/gpt-3">gpt-3</a>
+          (32 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/vibe-is-real">vibe-is-real</a>
+          (9 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2023/07/07/whispering">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. art" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

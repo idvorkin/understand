@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Adobe should make a boring app for prompt engineers (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2022/06/02/dalle">
+
+<meta property="og:title" content="Adobe should make a boring app for prompt engineers">
+
+<meta property="og:description" content="Posted on Thursday 2 Jun 2022. 2,236 words, 16 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2022/06/02/dalle.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2022-06-02T19:51:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Adobe should make a boring app for prompt engineers</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    19.51, Thursday 2 Jun 2022
+    <span class="nowrap">
+      <a
+        href="/home/2022/06/02/dalle"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">AI image synthesis has just crossed a reliability and quality threshold that means that it can replace a broad swathe of creative work, like, <em>tomorrow,</em> but what’s interesting is that a new kind of expertise is required, prompt engineering, and that gives a clue to the future shape of the industry.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Recent developments:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>DALL-E 2</strong> (by OpenAI) transforms a natural language prompt into a matching image – and it’s remarkable. Scroll through the <a href="https://twitter.com/search?q=%23dalle">#dalle tag on Twitter</a> to see photorealistic images, graphic design, fake stills from movies that never existed, etc.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The variety is amazing. Watch <a href="https://www.youtube.com/watch?v=rs1IdUL9h8o">Alan Resnick’s DALL-E variant test</a> <em>(YouTube, 2 mins)</em> where he starts with a single prompt and simply wanders through adjacent images, making a stop motion animation (<a href="https://twitter.com/alanresnicks/status/1528793316313092096">background here</a>).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then Google launched <strong>Imagen</strong> which similarly combines <q>an unprecedented degree of photorealism and a deep level of language understanding.</q> <a href="https://imagen.research.google">Check out the examples on their project page.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s one thing seeing photorealistic images. It’s another seeing pixelated graphics, or DALL-E doing brand design, <a href="https://twitter.com/JanelleCShane/status/1531624303770279937">producing plausible logos</a>.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">What’s I love about this new technology is that we’re still figuring out how to use it, and we’re figuring it out together.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’ve been playing with the previous gen of text-to-image AIs as part of the <em>Midjourney</em> beta.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Their <a href="https://www.midjourney.com/">homepage</a> isn’t super informative, but <a href="https://twitter.com/midjourney">their Twitter is good</a>.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s fun! The pics are pretty!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’ve popped a couple of Midjourney-generated images on my Instagram:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.instagram.com/p/CeF17yXKxr6/">Lake, trees, and city.</a> Prompt: “London is a forest in the style of David Hockney’s The Splash” – the colour palette is gorgeous, and the brushwork on the trees is something I’ve taken inspiration from for my own sketches.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.instagram.com/p/CeGnriTKc1w/">Monument Valley.</a> Again the prompt included something about Hockney, then I followed a couple of variations.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">(The text you give the AI is called the “prompt.” As you can tell, the secret incantation I like to use is <em>“in the style of David Hockney.”</em>)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The interface is curious! During this beta, there is no app and no website. Instead the sole interface to Midjourney is via Discord.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">All users are in the same Discord server, and there a whole bunch of chat channels. To get an image, you publicly type the command ‘/imagine’ with your prompt. The Midjourney bot replies, then updates its reply continuously as it generates four variations – this process takes a couple minutes. You can then choose one of the variations to either (a) branch out create additional variations, or (b) upscale to greater resolution.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Everyone can see what everyone else is doing. All your work is in the open!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It <em>doesn’t</em> feel like social media. With something like Instagram, you’re all in the same world, but the foundational feeling is one of: seeing and being seen.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Instead Midjourney feels more like contributing to Wikipedia, or like a giant scientific experiment. We’re not generating images, we’re discerning the internal nature of the AI by sending in probes (words) and seeing what bounces back.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s like X-ray crystallography, our word beams diffracting into output images, there to be decoded.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s definitely collaborative. Early on with text-to-image AIs it was discovered that simply appending <em>“high quality”</em> or <em>“4K”</em> to your prompt, whatever it is, will product better results. And the Midjourney Discord is like this <em>all the time.</em></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Note also Midjourney’s current economics.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">High quality AI models are too big to run anywhere but the cloud, and running them takes a lot of compute. Compute is expensive.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So Midjourney gets all of its beta users onto a paid plan as soon as possible. You get a certain quantity of CPU hours for free. Then you get nudged onto a monthly subscription and your usage is metered – the bot will let you know how many CPU hours you’re consuming.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Additionally the images are <em>licensed.</em> If you use the generated images commercially, for a corporation with annual revenue north of $1m, or anything related to the blockchain, you need pay for a commercial licence.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Which is fascinating, right? This is what was in my head when I was <a href="/home/2022/05/26/filtered">circling the concept of ownership</a> recently – a camera manufacturer doesn’t get a say in how I use my photos. Microsoft Excel costs the same whether I’m using it to manage my household budget or sell a bank. We believe that Henrietta Lacks’ family today have moral ownership of the cell line produced from a tumour produced (against its will) by Lacks’ body in 1951, but we don’t grant the photographer who set up the camera and the trigger mechanism copyright in the case of the monkey selfie. It would be fascinating for a philosopher to sit down and, from first principles, tease out the detail of all these situations… and also this current situation: a proprietary AI model and the ownership of the prompted output.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">TAKEAWAY: compute costs $$$.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Like I said, half the fun is the community figuring out magic incantations to inspire the AI to do what you want. For instance you’re going to get a certain kind of result if you start your prompt with <em>“A photo of…”.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There was a 24 hour flurry of excitement when it appeared that DALL-E had an internal angelic language. Here’s the pre-print on arXiv: <a href="https://arxiv.org/abs/2206.00169">Discovering the Hidden Vocabulary of DALLE-2</a>.</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">it seems that ‘Apoploe vesrreaitais’ means birds and ‘Contarra ccetnxniams luryca tanniounons’ (sometimes) means bugs or pests.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Swiftly debunked. Which is a shame because there’s a long folkloric history of a secret and perfect <a href="https://en.wikipedia.org/wiki/Language_of_the_birds">language of the birds</a> and it would be hilarious to discover it like this in the Jungian collective unconscious, crystallised out from the distillation of the entire corpus of human text hoovered up from the internet.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">ALSO there are other similar AI phenomena, just as mysterious. For instance adding the words <q>zoning tapping fiennes</q> to movie reviews <a href="https://www.ericswallace.com/triggers">prevents an AI from classifying the review as good or bad</a>.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s a process.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>What’s happening is a new practice of prompt engineering</strong> – or rather let’s call it <em>prompt whispering.</em> Prompt whisperers have a sophisticated mental model of the AI’s dynamic behaviour… or its psychology even?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Look at <em>Astral Codex Ten</em> think though this, while he tries to generate a stained glass window of bearded 17th century astronomer Tycho Brahe accompanied by his pet moose.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It doesn’t work:</p>
+<blockquote cite="https://astralcodexten.substack.com/p/a-guide-to-asking-robots-to-design?s=r" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Astral Codex Ten" data-title="A Guide To Asking Robots To Design Stained Glass Windows">
+<p class="measure-wide f6 f5-l lh-copy black-80">I think what’s going on here is - nobody depicts a moose in stained glass. A man scrying the heavens through a telescope is exactly the sort of dignified thing people make stained glass windows about. A moose isn’t. So DALL-E loses confidence and decides you don’t really mean it should be stained glass style.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Also, is it just me, or does Brahe look kind of like Santa here? Is it possible that wise old man + member of the family Cervidae gets into a Santa-shaped attractor region in concept space? I decided to turn the moose into a reindeer to see what happened: …</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Astral Codex Ten, <cite><a href="https://astralcodexten.substack.com/p/a-guide-to-asking-robots-to-design?s=r">A Guide To Asking Robots To Design Stained Glass Windows</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">So the AI is no longer a black box.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s a landscape, maybe, with hills and gradients and watersheds. But it has internal structure, and the knowledge that concepts can be <em>near</em> or <em>far</em> or have gravity isn’t <em>sufficient</em> to generate great imagines, but it informs the prompt whisperer to dowse in the right place.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Not everyone will be good at this. Some people will be naturals! It’s like being good at using google or researching with a library, a combination of aptitude and eye and practice. A skill.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Also I didn’t know this Brahe fact before: <q>Sometimes he would let the moose drink beer, and one time it got so drunk that it fell down the stairs and died.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So!</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">DALL-E/Imagen/etc output is high quality. Photorealistic, sharp, with the appearance of being professionally produced, etc (if that’s what you ask for).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But also, and this is what seems different, the AIs seem to have a reliable level of Do What I Mean.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">If you can ask for a particular type of image with intent, get a result in the ballpark and then iterate it – well, one possibility of text-to-image synthesis is that it replaces a decent amount of creative work. Maybe not the super imaginative or high-end or novel or award-winning work, but definitely the category that takes a bunch of time and bedrocks agency P&amp;Ls.</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Why get a model and a set for a product photoshoot when you can get dial in the mood you want, then comp your product in later?</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Why grind out a hundred icon variations if you can batch produce them from words?</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Why set a creative off on making a dozen logo options for a brand when you can just feed the brief to an AI?</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Why spend hours finding art for your low circulation industry magazine to give it some colour when you can hand the caption to a bot and create ideals images in whatever size you want?</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">That’s the threshold that has been crossed.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">BUT what this early work shows is that prompt engineering is a skill, just like using Adobe Photoshop or Figma. You can use it in a utilitarian way or creatively but it’s a skill none-the-less. And required.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So the future of the creative sector, at least in the near term,</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">IS NOT: creatives get replaced by software, the client right-clicking on an app for themselves to auto-fill an image, like some kind of visual autocomplete, but instead</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">IS (or might well be soon): agencies use software to 100x their productivity.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">As long as there is skill in using these AI models to produce great results, there is a place for creatives. My take is that the existing industry relationships will remain in place. But the performed work will change. Less time drawing, more time prompt whispering.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>What’s the ideal tool for prompt engineering?</strong> There isn’t one yet, it’s all too new.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The ideal tool is primarily about workflow and exposing all the various parameters.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It shouldn’t blow any minds, except
+for what people do with it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It should be boring as heck because that’s what a workbench is.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m imagining an app that allows for managing many concurrent projects, and includes features like:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Colour palette management</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Fine-tuning of custom styles to apply to any output</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">A visual method to explore variations with an infinite stored history, like a tree map crossed with a lightboard</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">A prompt builder using stored tokens, with prompts stored for all images so that old projects can be picked up at any time</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Management of queues (image generation is slow) and metered compute</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Automation to crank out large numbers of variations based on spreadsheets of input data, upsized, saved and named appropriately</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Bonus points: a user interface with <a href="/home/2022/05/24/epistemic">epistemic agents</a> to provide inspiration in exploring concept space.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This isn’t a limited plug-in just for smart in-painting. This would be a full-blown application for expert, rapid use of DALL-E and the like.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The business model might be different?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The economic boundary condition is that compute is remote and expensive, so you’re going to have to keep on feeding the meter. In designing my imaginary app, I would build this in pretty deep: projects should have budgets associated with them.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Given this, the app should be free. Make it really easy to top up your compute balance in-app then charge 5% on top.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The Export menu item would include a drop down for the file format, and a checkbox for a commercial license (also paid).</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">It would fit right into Adobe Creative Suite. It’s the right blend of creativity, production, and workflow.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Maybe Midjourney will build it first? Someone should anyway.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s kinda insane how fast this is going. DALL-E’s natural language understanding builds on GPT-3, which was <em>radically</em> better at human language – and dropped only 18 months ago.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">At the time <a href="/home/2020/08/24/ai_overhang">I ran across the idea of an AI overhang</a>: what if there are no fundamental technical constraints and AI can get 10x or 100x better in a matter of months?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">We’re thoroughly in overhang territory now. If text and images then why not 3D models and characters, then why not maps of virtual environments and VR worlds, then why not auto-generated gameplay. Why not narrative and music and entire movies.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Practically (from that post above): <q>Intel’s expected 2020 revenue is $73bn. What if they could train a $1bn A.I. to design computer chips that are 100x faster per watt-dollar?</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Still waiting for that.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">We’ll need tools for this kind of work that are as practical and reliable as any office or CAD software.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">One thing is: image generation is still slow.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">How much storage and compute would you need to run something like Midjourney/DALL-E/Imagen/or whatever locally? How about with real-time generation time (sub 150ms feels interactive)? How about 4K 30fps?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I don’t know the answers. I’m trying to get a handle on how many Moore’s law doublings we are away from that kind of experience.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Because the wild kind of prompt whispering would be where it’s not prompt-and-wait but as-you-speak and conversational. Like the difference between ancient mainframes with batch processing and real-time desktop GUIs with the powerful illusion of direct manipulation – imagine the creative power unleashed with the first Macintosh, the personal computer “for the rest of us,” but for interactively driving these inhumanly powerful AIs.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Bicycles for the mind indeed.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2022">20-most-popular-in-2022</a>
+          (20 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/gpt-3">gpt-3</a>
+          (32 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/speculative-in-2022">speculative-in-2022</a>
+          (20 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2023/01/12/next">Looking for new projects or even a long-term something for 2023</a>
+        (12 Jan 2023)
+      </li>
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2023/07/07/whispering">Prompt engineering and prompt whispering</a>
+        (7 Jul 2023)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2022/06/02/dalle">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. dolphins" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

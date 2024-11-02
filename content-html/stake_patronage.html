@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Artist patronage using Web3: a sketch of a payment mechanism (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2022/01/14/stake_patronage">
+
+<meta property="og:title" content="Artist patronage using Web3: a sketch of a payment mechanism">
+
+<meta property="og:description" content="Posted on Friday 14 Jan 2022. 2,517 words, 5 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2022/01/14/stake_patronage.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2022-01-14T19:34:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Artist patronage using Web3: a sketch of a payment mechanism</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    19.34, Friday 14 Jan 2022
+    <span class="nowrap">
+      <a
+        href="/home/2022/01/14/stake_patronage"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">Here’s an idea for a (possibly) novel form of payment, inspired by the crypto/Web3 world, specifically to support performers, artists, and creators. I call it <em>Stake Patronage.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Perhaps this already exists! In which case let me know.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Some background before I get to the mechanism…</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Why I’m interested in Web3:</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The cryptocurrency world is troubling because of (a) carbon cost, and (b) scams. BUT in the midst of this are fascinating hints of emerging new infrastructure for the web.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The consumer web over the past decade has become centred on vast attention aggregators resting on adtech and a small number of cloud computing providers, and the economics, incentives, and who-owns-what is at this point locked in. It’s not great.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">With Web3 we may find our way to a new settlement between users and corporations. Here and there are glimpses of new ways of storing files, new ways of owning and providing access to data, new ways of asserting identity, new forms of payments – and from all of this, there may be a route to upend the status quo.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Is finding the way worth the carbon and the scams? I’m sceptical about whether crypto will eventually mean (as its boosters promise) a newly egalitarian economy or breaking up of monopolies or net increase in personal freedom and agency. Honestly I lack the imagination/faith to imagine a future so totally transformed. But these new capabilities are tantalising… so I keep a personal running list of what I find interesting in the Web3 gold rush, in the hope of spotting something useful in its fundamentals that has immediate applicability.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Why I’m interested in novel payment formats:</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">New payment formats mean new behaviours.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">For example, we’ve got:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">One-off payments</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Subscriptions</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Of course it’s more fine-grained than that.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And you can see what the effects of these being “standard” allows in the digital space:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">One-off payments <em>unlocks</em> Amazon’s one-click purchasing and e-commerce generally</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Subscriptions <em>unlocks</em> “sticky” recurring payments, which means that vendors will invest in upfront marketing and also can provide an ongoing service (like a publication, or SaaS in the business world) with confidence that they’ll have ongoing revenue.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then there are a couple of novel-but-now-accepted payment formats:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Micropayments: small, semi-automatic, and low-friction payments – which never quite found the universality that everyone imagined when they were invented, but which unlocked the $70bn+/yr “free-to-play” mobile games market (which itself underpins the smartphone ecosystem)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Conditional/pledge payments: Kickstarter was initially enabled by payments that were conditional on a threshold of pledges (you only pay if X other people do too). While Kickstarter has had “only” approx $5bn through the books, you could argue that it was an early proof for the much larger crowdfunding sector, where (say) an individual will put down cash for fractional ownership of new real estate.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">What makes a payment format work? Trust. Trust from the consumer that the vendor won’t run off with their money. Trust from the vendor that the money will eventually find its way to them.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Deep down, payment formats are implemented as <em>“payment rails:”</em></p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">“Rails” are payment jargon for the technological and financial links between various entities which allow money movement. Visa provides rails, debit card networks provide rails, etc etc.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">That quote is from this fantastic edition of Patrick McKenzie <em>a.k.a.</em> patio11’s series <em>Bits About Money:</em> <a href="https://bam.kalzumeus.com/archive/buy-now-pay-later/">BNPLs: Businesses Needing Provided Legibility (Jan 2022).</a> It unpacks another payment format, BNPL – “Buy Now Pay Later,” which is beginning to appear all over the web next to the “Buy Now” button as an alternative to using your credit card. Instant instalment payments, and that boosts sales for the merchants (a new consumer behaviour).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">McKenzie unpacks <em>payment rails</em> in another article which is absolutely worth absorbing in detail:</p>
+<blockquote cite="https://bam.kalzumeus.com/archive/bank-transfers-as-a-payment-method/" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Bits About Money" data-title="Bank transfers as a payment method (Nov 2021)">
+<p class="measure-wide f6 f5-l lh-copy black-80">You could have made a payment by saying “I’m good for $4; please give me coffee”, and in some cases (such as stores you have a tab with) that suffices. But the reason it works at scale is that the trust problem has been solved by so-called <em>payment rails,</em> which are a constellation of firms that have implemented a protocol to quickly make a series of offsetting promises about debts such that the cafe quickly becomes almost positive it is owed money for the coffee and that that debt will be collected with a very high certainty.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">In credit cards, a brief and intentionally simplified version of the actions of the payment rail is: you agree with your bank that you owe them $4, your bank agrees with a credit card network that it owes a particular processor almost $4 (taking a fee), and the credit card processor agrees with the cafe that it owes them a bit less than $4 (taking another fee).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">In the <em>settlement</em> phase of the transaction, the credit card processor makes an agreement with its bank that it owes the processor a bit less than $4, which it discharges by having their bank agree that it owes the cafe’s bank a bit less than $4, which the cafe’s bank discharges by agreeing they owe the cafe a bit less than $4. And so your debt for coffee is now two offsetting debts; between you and your credit card issuer, and between the cafe’s bank and the cafe. You will, at some point in the future, probably up with your credit card issuer, and the cafe will probably withdraw money from the bank (perhaps to e.g. buy beans or pay the barista), but from your mutual perspective the transaction for the coffee will be long over by then.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Bits About Money, <cite><a href="https://bam.kalzumeus.com/archive/bank-transfers-as-a-payment-method/">Bank transfers as a payment method (Nov 2021)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">So the <em>technical</em> implementation of high-trust rails allows for <em>new behavior</em> from consumers.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">HYPOTHESIS: One capability to come out of the Web3 space is novel payment rails.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Because I’m hand-waving and not talking about end-to-end protocols and implementation, I’ll just say payment formats, not rails.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">With crypto, you’ve got a couple of problems with payments:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">There’s typically (with the widely-accepted coins) a high transaction fee – transactions are verified by miners who have computers that can do the work, and that costs money. But if it costs $30 on top per transaction, you’re not going to opt into a $1/week subscription.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Asset appreciation makes you want to hang onto it – everyone remembers <a href="https://www.marketwatch.com/story/bitcoin-pizza-day-laszlo-hanyecz-spent-3-8-billion-on-pizzas-in-the-summer-of-2010-using-the-novel-crypto-11621714395">the guy who spent 10,000 bitcoin on two pizzas</a> in May 2010 (the cost in today’s dollars: $432m).</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Could novel payment formats reduce this friction with crypto transactions, and provide for new behaviours besides?</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Proof of Stake as the underpinnings of a novel payment format:</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m still getting my head around all of this, so let me spell out my understanding as literally as possible. (Factual corrections gratefully received. Apologies for being casual with terminology.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A blockchain is a transaction history. Each new transaction is verified to be non-fraudulent by looking at that history (you want to avoid double-spending, for example). The trick is how to do that in such a way that many, many parties trust that no-one is defrauding the system, and the answer with cryptocurrencies is that you decentralise the verification and make it so that all these parties can come to consensus without a single party being in control. The consensus mechanism varies.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">With Bitcoin, the consensus mechanism is based on <em>Proof of Work.</em> As part of compiling the transaction history, verifiers run hard sums for each step, and the cumulative effect is that it would be <em>really really expensive and slow</em> to fabricate a fictional transaction history in order to defraud people (but, remarkably, very quick to check whether the history looks legit).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(The verifiers, or “miners” for Bitcoin, get paid the transaction fee.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Other blockchains use other consensus mechanisms and there is one called <em>Proof of Stake</em> that burns less computational resources (and therefore less carbon).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">With Proof of Stake, each step in the transaction history is signed off (“validated”) by someone who holds a large amount of that currency. That’s provable because it’s part of the transaction history.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Again the transaction history becomes hard to fake. And again the validators who knit the transaction history into the blockchain get paid the transaction fee.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Important note: from what I understand, the big blockchains are shifting to various variations of Proof of Stake because it more-or-less deals with the carbon problem. Good news.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Where this gets interesting, for people like you and me (as opposed to the people with large enough computers to become validators), is with <strong>Delegated Proof of Stake.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">With Delegated Proof of Stake, a validator doesn’t need to hold coins themselves. Instead, I can “stake” my coins with a validator, they will perform the validation, and then they will share the transaction fee reward with me.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">FOR EXAMPLE:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Let’s say I own 100 Tezos coins (XTC)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">I can stake these with a validator who I trust not to defraud the network, say Coinbase (this process is called delegation)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Coinbase performs validation using their big, always-on, always-connected computers</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">The validator gets the reward, and they share it with me. <a href="https://www.coinbase.com/staking">With Tezos and Coinbase</a> this amounts to 4.6% annual yield (i.e. at the end of the year I have 104.6 XTZ)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">I still own the coins, so if the value goes up I have that benefit too.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Okay, this is how it works today, and there’s the hint of something interesting here.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">If staking = asset appreciation + yield, could the two income streams be separated and used for a new recurring payment format?</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Imagining Stake Patronage:</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My proposal is that it should be possible to stake my coins with a validator, retaining ownership of the coins as before, but name a separate beneficiary for the yield.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(It’s a variation of Proof of Stake, deep in the blockchain consensus mechanism itself, and that’s why I call it Stake Patronage.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The use case here is to support artists and creators, such as with the low monthly recurring payments offered by services like Patreon and Substack in the “regular” dollar economy.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So it would work like this:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">I see an artist performing. I love them!</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">So I decide to stake my 100 coins for the artist as patronage (a validator like Coinbase is still involved)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">I retain ownership of the coins: I can remove my patronage or re-stake the coins for a different artist at any time</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">The artist benefits from the 4.6% per annum yield – this is paid every week or so.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">The format has some benefits:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>Staking is sticky.</strong> Unlike tipping, where the artist has to ask/encourage each tip, staking is more like subscribing to a channel on YouTube or following someone on Twitter. It’s worth the artist pushing for it because it’s easy to do and it <em>continues.</em></li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>Staking produces recurring income.</strong> Artists get the benefit of the yield every day/week/month. This means that income is smoothed out, and it can act as anticipated future income which provides mental space for creative work.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>It’s low-friction for the patron.</strong> Staking isn’t loaded with transaction fees, and it doesn’t require the tense decision of giving up an appreciating asset – it’s easier to do than transferring actual coins. It’s also easily reversible.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>Patronage acts as a discovery mechanism.</strong> It would be possible to have a public leaderboard of which artists have most coins staked with them as the beneficiary. Given a number of live performances being advertised, if you see an artist with high Stake Patronage, you know they have a dedicated following - just like choosing among YouTube videos according to their views.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><strong>It’s direct support for artists.</strong> When artists produce a work attached to an NFT, they’re creating a speculative asset, and they can make money when that asset is traded. But it’s a secondary way of supporting them, and it means that their focus is partially on boosting marketplace activity rather than creating new work. This is a way to directly support artists.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">(By “artists” I know I’m skewing more towards live performers rather than artists who produce static, tradable works. But I think patronage has pretty broad applicability.)</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Implementation and user experience:</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I can picture the user experience.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A site, like YouTube but with more social presence, has a number of live streams available. You can see which are the popular ones because they have a large number of coins staked for their benefit. Or maybe there are curators who support up-and-coming artists: curators have patrons too.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Any platform needs a non-zero-cost score to figure out popularity, if only to sort the search results. The web has PageRank based on hard-to-earn backlinks; YouTube has views based on scarce time; Twitter has followers based on scarce attention. Here, artists would have patrons.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So there are leaderboards, but of course because Stake Patronage is on the public blockchain, this is a distributed score, not limited to a single site.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then, next the live stream, there is a button so that viewers can choose to stake the coins in their wallet. <em>“Like, Subscribe and Stake,”</em> the performers say at the end of a set, by way of sign-off.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The site itself would act as a validator, or perhaps partner with an existing validator.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And then the artists receive yield.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The analogy for me is this: subscribers are stickier than one-off transactions for writers; patronage is stickier than tip-jars for performers. Just as NFTs unlocked a new market for visual artists, perhaps Stake Patronage could unlock a market for performers, artists, and creators more generally.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>In terms of implementation, how would this work?</em></p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Perhaps it’s a protocol upgrade. Maybe a chain like Tezos would need to include the concept of yield beneficiary (default to coin holder) in the consensus mechanism, and then validators like Coinbase would need to expose this in the user interface.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Or maybe it’s a standalone smart contract that connects to any coin in a user’s wallet, but I don’t know whether this would be possible.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Generalised, maybe this isn’t just about patronage. Could yield also be directed to charities? A way for crypto holders to support good works without giving up their appreciating asset.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But this is where my hand-waving knowledge really runs out of road.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Of course the above is quite possibly totally wrong-headed. But for me it’s areas like this where Web3 gets interesting: we can think about behaviours we want to encourage (like artist patronage) and then tweak the actual underlying economics to make that a low-friction path. Is this route viable? Unknown. But the exercise in figuring it out makes me want to spend more energy on finding opportunities in Web3.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">On the off-chance you know how to do this, or you’re at Tezos or Coinbase or similar and you have a <em>path</em> to knowing how to do this – get in touch? I’m working on a platform for performers and patrons that is the perfect test-bed for this.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Thanks to Ed Cooke and Jon Boutelle at <a href="https://sparklespace.com/">Sparkle</a> for conversations and being early readers. Blind spots and misconceptions all my own. As always this is a snapshot: thinking out loud rather than a final view.</em></p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/web3">web3</a>
+          (7 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2022/04/29/adaptive_ui">Apps are too complex so maybe features should be ownable and tradable</a>
+        (29 Apr 2022)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2022/01/14/stake_patronage">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. art" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

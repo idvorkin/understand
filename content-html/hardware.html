@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Thinking about the emerging landscape of AI hardware products (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2024/01/26/hardware">
+
+<meta property="og:title" content="Thinking about the emerging landscape of AI hardware products">
+
+<meta property="og:description" content="Posted on Friday 26 Jan 2024. 1,297 words, 12 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2024/01/26/hardware.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2024-01-26T18:16:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Thinking about the emerging landscape of AI hardware products</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    18.16, Friday 26 Jan 2024
+    <span class="nowrap">
+      <a
+        href="/home/2024/01/26/hardware"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">I’ve been looking at the landscape of AI hardware products. Will the future be more like voice assistants that we talk to, or more like… well, something else?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">See, there’s been a flurry of AI hardware in consumer product.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Assistants.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Two products aim to be your smartphone replacement:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.fastcompany.com/91013196/how-design-drove-10m-in-pre-orders-for-rabbit-r1-ai-hardware">Rabbit r1</a> <em>(Fast Company)</em> – a bright orange handheld with screen, a rotating camera, a big walkie talkie button, and a <s>lovely fidget device</s> scroll wheel. Rabbit OS interacts with apps on your behalf when you talk to it.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.theverge.com/2023/11/9/23953901/humane-ai-pin-launch-date-price-openai">Humane AI Pin</a> <em>(The Verge)</em> – a wearable microphone plus  world camera worn as a badge. It does whatever you ask re: what you’re looking at, and output results with a super futuristic green laser projector (that somehow also looks retro).</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">If iPad was dismissed as a “consumption device” versus general purpose computing devices, these are both “service devices”. They’re made for ordering cabs, booking restaurants, and automating sequenceable knowledge work tasks.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(btw I am not super into the Humane AI Pin overall but I do wish my phone had a green laser projector that I could play with. So, so good.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Two other wearables:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.theverge.com/23922425/ray-ban-meta-smart-glasses-review">Ray-Ban Meta smart glasses</a> <em>(The Verge).</em> This product is primarily for photos and stream, but the new AI features let you ask questions about what you’re seeing: how do I get to X, how many calories in my lunch, where do I buy that bag.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.fastcompany.com/91007630/avi-schiffmanns-tab-ai-necklace-has-raised-1-9-million-to-replace-god">Tab AI</a> <em>(Fast Company)</em> is a necklace with a mic that you talk to. A chatbot: <q>What I’m trying to do is create a new relationship in your life; radical transparency without concern of judgment. I think this is a relationship people used to have with God but is lacking in the modern world.</q></li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">I am into the ambition and experimentation here!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And, no, <em>“AI hardware”</em> is not a product category, in the same way that voice assistants like Amazon Echo aren’t really a category. You don’t buy them to be a voice assistant, you buy them to be a kitchen timer or to play music or whatever. A “smart speaker” is a speaker.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Yet these are all assistants in one way or another. Playing with the form factor or the way it fits into your life.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So that’s potentially one end of the AI hardware spectrum.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Non-assistants.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then there is AI hardware <em>without</em> any kind of assistant.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Where the AI enables some other feature. The AI isn’t on the surface as the user interface, it’s deep inside, embedded.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Ok, back to 2018:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80"><a href="https://www.theverge.com/2018/2/27/17055618/google-clips-smart-camera-review">Google Clips</a> smart camera. Not point-and-click <em>(that was a camera category once upon a time)</em> but always-on. You stand this small square camera on a shelf at a party and it takes 15 photos per second… selecting and retaining only the good ones, thanks to its on-device real-time AI. Like a domesticated GoPro plus a robot photo editor, all in one.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Clips didn’t do so well – it’s almost impossible to invent new categories.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But I’m using it to illustrate this <em>embedded AI</em> end of the spectrum. (And the fact that Google did it on-device 6 years ago shows how long they’ve been ahead with AI, even if that’s not quite so apparent today.)</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>A typology of AI hardware features.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">To tease this space out a little further, <em>assistants</em> bundle together two separate AI-enabled features: new user interfaces, and new agentive (tool using) abilities.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So I think we have a triangle (<a href="/home/2024/01/05/triangles">ternary diagrams have been on my mind</a>).</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">AI-enabled user interfaces, like voice or computer vision</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Behind-the-scenes agentive AI, like figuring out sequencing from your instructions, or using apps as tools</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Embedded AI to enable a feature, like “interesting scene” detection in a camera</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">You could draw a triangular landscape between these extremes. All the products I’ve mentioned could be plotted somewhere inside.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Exercise for the reader: find the gaps and invent new products like planting flowers…</em></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Embedded AI.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Me, I’m most interested when AI <em>isn’t</em> an assistant.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The argument goes like this…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Moore’s Law cuts both ways:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">If computers get 100 times more powerful over a decade, we can EQUIVALENTLY say that computers get: 100 times smaller; or 100 times cheaper; or 100 times more abundant.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">This is what I’ve previously called <a href="/home/2023/10/06/ubigpt">intelligence too cheap to meter</a> – and what does it mean to have GPT-4-level intelligence in any light switch, or behind every menu command in your notes app, or your cat’s collar, or in your shoes, or quietly doing its job as a <a href="/home/2023/02/07/braggoscope">software universal coupling</a> or whatever?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Ubiquitous, embedded AI.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I called it <a href="https://berglondon.com/talks/botworld/?slide=30">fractional artificial intelligence</a> back in 2012:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">We can be frivolous with mathematics, throw it around like confetti.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">So I didn’t mean “fractional” as in dumb; only dumb compared to the giant planet brains owned by Big AI. I meant… small and everywhere. </p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I had no idea in 2012 what the implications of intelligence too cheap to meter would be, and I have no idea <em>now.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But I’m interested!</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Back to the poetry clock, of course.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">“Embedded AI” is the territory that I’m playing in with my rhyming clock.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em><strong>Obligatory plug:</strong> the Kickstarter pre-launch page has just opened! <a href="https://www.kickstarter.com/projects/genmon/poem-1-the-ai-poetry-clock">Go register your interest in Poem/1!</a> Telling the time with a new poem every minute, composed by ChatGPT, and a gorgeous e-paper screen! You’ll get a notification as soon as the campaign opens next week.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The AI clock isn’t an assistant; it doesn’t have agentive capabilities to use tools and do general purpose problem solving. It doesn’t respond to your presence or requests or really any context at all except the time.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s an appliance.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>An AI-ppliance.</em> (Sorry.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">For all of it being “simply an appliance,” it’s weird to be in the same room and hang out, let me tell you.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">We are not accustomed to things like rhyming couplets emerging from a machine poet. Poems are not used <em>decoratively,</em> except made in cross-stitch and hung on the wall. And yet! Here we are!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I think, with the poetry clock, it’s ambiguous whether there’s AI involved at all. A human could quite possibly write a whole day of poems, one for every minute, and then display them on a loop. It’s only the sheer infinity of it that gives it away, and you only really appreciate <em>that,</em> deep down, after living with it.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s sort of human (but the words aren’t as good as a human poet would write), sort of alien (it has inhuman endurance).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I think there will be a lot of this.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Insane AI, planetary compute, used for really, really mundane things.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><strong>Sharing our planet with machine entities.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There’s a great interview with Stanley Kubrick about the movie <em>2001: A Space Odyssey</em> (<a href="/home/2014/11/12/filtered">previous discussed in 2014</a>).</p>
+<blockquote cite="http://www.visual-memory.co.uk/amk/doc/0069.html" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Joseph Gelmis" data-title="An Interview with Stanley Kubrick (1969)">
+<p class="measure-wide f6 f5-l lh-copy black-80">One of the things we were trying to convey in this part of the film is <u>the reality of a world populated - as ours soon will be - by machine entities who have as much, or more, intelligence as human beings</u>, and who have the same emotional potentialities in their personalities as human beings.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Joseph Gelmis, <cite><a href="http://www.visual-memory.co.uk/amk/doc/0069.html">An Interview with Stanley Kubrick (1969)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">And:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">We wanted to stimulate people to think what it would be like to share a planet with such creatures.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">YES!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">BUT!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I wonder whether the reality of a world populated with AI is not so much about listening, watching, speaking, laser-projecting entities, assistants in our pockets and hanging on necklaces and our every word - not JARVIS or HAL 9000 or Samantha or Joshua - but instead a trillion extremely mundane, genius-level, nameless embedded intelligences, squirrelling away, hidden inside everything?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And how will that work, practically? How will that technology be developed, managed, maintained, secured, networked, owned, shared and made equitable?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And how will it feel to live there?</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/gpt-3">gpt-3</a>
+          (32 posts)
+        </li>
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/that-ai-clock-and-so-on">that-ai-clock-and-so-on</a>
+          (12 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2024/03/20/agents">Who will build new search engines for new personal AI agents?</a>
+        (20 Mar 2024)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2024/01/26/hardware">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. multiplayer" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>How my Twitter bot makes personalised animated GIFs (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2016/04/27/making_animated_gifs">
+
+<meta property="og:title" content="How my Twitter bot makes personalised animated GIFs">
+
+<meta property="og:description" content="Posted on Wednesday 27 Apr 2016. 1,551 words, 33 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2016/04/27/making_animated_gifs.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2016-04-27T10:45:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">How my Twitter bot makes personalised animated GIFs</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    10.45, Wednesday 27 Apr 2016
+    <span class="nowrap">
+      <a
+        href="/home/2016/04/27/making_animated_gifs"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">Ben Brown noticed that my bot @5point9billion made him a personalised animated GIF <a href="https://twitter.com/5point9billion/status/725012835558916097">when it tweeted him yesterday</a> (on the occasion of light that left Earth as he was born, right at that moment passing the star Iota Pegasi, a little over 38 light years away). And he was curious about how it did that. So:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="http://interconnected.org/home/2015/12/14/5point9billion">There’s a previous write-up about @5point9billion here.</a> From that post:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">My new bot is called @5point9billion which is the number of miles that light travels in a year. The idea is that you follow it, tweet it the date of your birth (e.g. <a href="https://twitter.com/genmon/status/674333947405447168">here’s my starter tweet</a>), and then it lets you know whenever you reach Aldebaran or wherever.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You get tweets monthly, and then weekly, and for the last couple of days… and then you pass the star. It feels neat, don’t ask me why.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">Since that write-up, I’ve also added a website to the bot. In addition to getting the realtime notifications on Twitter, <a href="http://electron.farm/5point9billion/">you can sign in on the site</a> and see what stars you’ve already reached.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Check this out: <a href="http://electron.farm/5point9billion/public-map">There’s also a public view,</a> with an animation. This is a 3D animated map of all the star systems we can see from Earth, within 100 light years. It sits there and rotated. You can type in your date of birth, and it’ll show you what stars you’ve already reached.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I made this public view as a “kiosk” mode when @5point9billion was <a href="http://www.andfestival.org.uk/events/matt-webb-5point9billion/">exhibiting at the Art of Bots show</a> earlier this month. The stars were laid out on the floor, fanning out from the Sun which was right by the kiosk. <a href="https://www.instagram.com/p/BEPOAEZqpcI/">Here’s a photo.</a> It was good fun to walk out from the Sun till you find the star you’ve just passed. And then to walk out to about 80 light years and think, hey, most people die around this point, and look at the stars falling just further from you and think, hey, I probably won’t reach those. Huh.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The star map is drawn and animated in Javascript and WebGL using <a href="http://threejs.org">three.js</a> which I really like.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And doesn’t it look kinda the same as the personalised star map that the bot made for Ben? Yup.</p>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">Making animated GIFs</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">I knew I wanted to tweet out personalised, animated star maps, whenever a bot follower passed a star (there are over 500 followers, and between 2 and 5 of them pass a star each day).</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Routes I considered but discarded pretty fast:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Generating the star maps offline. For sketching on my Mac, I use a Python drawing package called <a href="http://plotdevice.io">PlotDevice</a> – this is what I used to make the first <a href="https://twitter.com/5point9billion/status/681438383412015104">quick-and-dirty star map</a>. I don’t like generating graphics offline because I want the ability to tweak and change my mind</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Drawing the graphics frame by frame using a dedicated package like <a href="http://cairographics.org">Cairo</a>. But I already have star maps in Javascript for the browser. I don’t like the idea of having two routes to draw the same graphics for different outputs. Feel like a lot of work</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">This is the rendering pipeline I settled on:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">The source animation is the same animation I use for the website… it’s drawn in Javascript using three.js. It’s just a page on my site</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">I already have queues and asynchronous processing on my website. The website is all Python because that’s my preferred language, and I have a my own Twitter bot framework that I’m gradually building up <em>(this is a whole other story)</em></li>
+<li class="measure-wide f6 f5-l lh-copy black-80">When a user passes a star, the machine responsible for <em>that</em> task adds a tweet to the send queue, and flags it for requiring media</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">At the appropriate time, the queue runner loads the animation page using <a href="http://phantomjs.org">PhantomJS</a> which is a web browser that can run headless on the server. It’s possible to drive Phantom from Python using <a href="http://selenium-python.readthedocs.org">Selenium</a></li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Because the animation is created on demand, and generated just for this tweet, it can include personalised information like today’s date, and the name of the user</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">The animation exposes a single Javascript function, <em>step()</em>, that renders the next frame. Phantom has the ability to reach into a page and make Javascript calls</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Using Phantom, each frame of the animation is generated by calling step(), capturing as a screen shot (as a PNG) to an in-memory buffer, and then down-sampling to half its original dimensions (this makes the lines sharper)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Using <a href="https://github.com/isaacgerg/images2gif">images2gif</a> (this is the Python 3 version of the library), the frames are assembled into an animated GIF, and saved as a temporary file</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">The GIF is optimised by shelling out to <a href="https://www.lcdf.org/gifsicle/">gifsicle</a>, a command-line tool for that purpose</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Finally, the media is uploaded to Twitter using <a href="http://www.tweepy.org">Tweepy</a>. Technically Twitter supports animated GIFs up to 5MB, but this is only available using a kind of chunked upload that Tweepy doesn’t yet support, so the GIFs have to come in under 3MB. Twitter returns a media ID, which the code associates with the queued tweet in my send queue, and that is posted when its time comes round. (The send queue ticks every 40 seconds, because Twitter rate limits.)</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">If you’re curious, <a href="http://electron.farm/5point9billion/mapgif?user=genmon&amp;draw=1">here’s the source animation on the website</a>. And <a href="https://twitter.com/5point9billion/status/725012835558916097">here’s how it looks in a tweet.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">If you want, knock the “draw=1” off the URL – you’ll get a blank page. Then call step() in your browser’s Javascript console and see each frame being generated.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There’s a wrinkle: Phantom doesn’t support WebGL, so the star map animation in three.js had to be re-written to draw directly to canvas… which three.js supports but you have to add custom sprites and a few other things. It gets hairy, and I’m super happy to have worked with <a href="https://twitter.com/phl">@phl</a> on that side of things – he looked after the Javascript drawing with his amazing code chops.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Another wrinkle: PhantomJS 2 (which this requires) installs on the Mac using <a href="http://brew.sh">Homebrew</a> just fine, but is a pain to build on Ubuntu which is what my server runs. <a href="https://github.com/Pyppe/phantomjs2.0-ubuntu14.04x64">There’s a pre-built binary here.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">In summary, this is a rendering pipeline which:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Fits my web-first approach… there’s no separate drawing package just for these animations, so debugging an image is as simple as opening a browser window</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Minimises the number of moving parts: I’ve added the ability to create images using Phantom but that’s it, there’s no separate drawing package or offline rendering</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Is agile: I can tweak and change last minute</li>
+</ul>
+<h3 class="measure f4 f3-l lh-copy black-80 pt3 pt4-l pb0 mb0">What else am I using this for?</h3>
+<p class="measure-wide f6 f5-l lh-copy black-80">I prototyped this rendering pipeline with another Twitter bot, <a href="https://twitter.com/tiny_gravity">@tiny_gravity</a> which just does a tiny particle simulation once every 4 hours. Sometimes it’s pretty.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This animation doesn’t use three.js for drawing, it uses <a href="http://processingjs.org">processing.js</a>, but the principle is the same. Again, <a href="http://electron.farm/admin/gravity/animation?draw=1">the animation is just a webpage</a>, so I can tweak the animated GIFs in the same way I tweak the rest of my website and bot behaviour. <a href="https://twitter.com/tiny_gravity/status/724949919811952641">Here’s that animation as a tweet.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">One of the things I’m most enjoying about having multiple projects is how they cross-pollinate.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My main side project right now is my bookshop-in-a-vending-machine called <em>Machine Supply.</em> <a href="http://machine.supply/machines/campus">Here it is at Campus</a>, Google’s space for entrepreneurs in Shoreditch, London.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><a href="https://twitter.com/MachineSupply/status/720914581502169088">It tweets when it sells a book.</a> Because of course it does.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The selection is changed over every Monday, and you’ll notice that each of the books has a card on the front <a href="https://twitter.com/MachineSupply/status/720680713578803200">(here’s a photo)</a> because every book is recommended by a real human made of meat.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">These cards and the shelf talkers (the label which says the item code and the price) are beautifully designed by my new friends at <a href="http://commonworks.co.uk">Common Works</a>. But they’re a pain to produce: For layout, the templates are in InDesign (which I don’t have), then I have to send an Excel spreadsheet of the new stock over to Sam at Common Works, which he then puts into the template, and prints.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My new process comes straight out of the @5point9billion code. The browser is my layout tool.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So Sam moved from InDesign to the web, and <a href="http://machine.supply/admin/stock/planograms/5/shelftalkers">here are this week’s shelf talkers as HTML.</a> This is part of my admin site, I’ve temporarily turned off permission checking to this page so you can see. The template is automatically populated with details from the weekly planogram. (A planogram is the merchandising layout for a set of shelves or a store.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And <a href="http://machine.supply/admin/stock/planograms/5/shelftalkers.pdf">here’s the exact same page as a PDF</a>. The pipeline is taken from @5point9billion: Phantom is used to grab the webpage, and this time render it to a PDF, complete with vector fonts and graphics. Because it’s a PDF, it’s super exact – which it needs to be to print right and fit neatly on the shelf edge.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s much quicker this way.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">My rule for Machine Supply, as a side project, is that it should take the minimum of my time, never feel like an obligation, and I should be able to manage it on the hoof. As a hobby, it should be <a href="http://paulgraham.com/aord.html">Default Alive</a>.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So automation is helpful. I like that this mode of generating PDFs can be done without my laptop: I can do everything from my phone, and print wirelessly.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Anyway. <a href="https://twitter.com/5point9billion/status/675734875106902016">You should follow @5point9billion!</a> It’s fun, and you get a personalised animated GIF every time you pass a star, generated with the most ludicrous rendering pipeline ever.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+
+  
+
+  
+    
+  
+  
+  <div class="mt6 mb3"></div>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. art" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

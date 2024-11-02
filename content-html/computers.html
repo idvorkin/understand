@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Why not faster computation via evolution and diffracted light (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2021/04/20/computers">
+
+<meta property="og:title" content="Why not faster computation via evolution and diffracted light">
+
+<meta property="og:description" content="Posted on Tuesday 20 Apr 2021. 1,566 words, 8 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2021/04/20/computers.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2021-04-20T20:47:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Why not faster computation via evolution and diffracted light</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    20.47, Tuesday 20 Apr 2021
+    <span class="nowrap">
+      <a
+        href="/home/2021/04/20/computers"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">Something I wonder is: what if computation, with today’s technology but done differently, could be - say - a million times faster? Here’s my thinking.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">If there’s a defining feature of what computers are, I would say it’s <em>abstraction layers.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You can tap buttons and move windows without thinking about what’s going on behind the screen. The programmer of that app sets out the instructions to draw those windows, and how they should behave, all without having to think about how exactly the instructions will be carried out.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Those instructions are defined in simpler instructions, and so on, and so on. Eventually there are instructions that tell the chip what to do – but even that isn’t the end of it. Because, <a href="/home/2021/03/02/microcode">as I learnt recently</a>, the chip itself turns its instructions into still more fundamental operations: microcode. Microcode choreographs the physical building blocks of the machine… registers, adders, flip-flops. And below <em>those</em> are gates. And below <em>those</em> are transistors.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It is <em>absurd</em> that a finely inscribed piece of silicon, with electricity running across it - <a href="https://en.wikipedia.org/wiki/The_Pattern_on_the_Stone">the pattern on the stone</a> - can be this <em>thing,</em> the computer. And yet!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Each abstraction layer hides the complexity beneath, and provides general purpose flexibility to the layer above.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">BUT</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Here’s my question. Abstraction means reliability and composability. But surely each layer comes at a cost? And there are so. many. layers.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Let’s say you just wanted to perform just one task. Say, recognise a face. Or know whether a number is prime or not. And you didn’t care about flexibility at all.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Could that task be performed by simply the right set of transistors, at the hardware level, no matter how insanely arranged?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>What shortcuts could be taken?</em></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Here’s my evidence that this is a valid question to ask: a paper from 1996 on the topic of <a href="https://en.wikipedia.org/wiki/Evolvable_hardware">evolvable hardware</a>.</p>
+<blockquote cite="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.50.9691" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Adrian Thompson" data-title="An evolved circuit, intrinsic in silicon, entwined with physics (1996)">
+<p class="measure-wide f6 f5-l lh-copy black-80">‘Intrinsic’ Hardware Evolution is the use of artificial evolution – such as a Genetic Algorithm – to design an electronic circuit automatically, where each fitness evaluation is the measurement of a circuit ‘s performance when physically instantiated in a real reconfigurable VLSI chip. This paper makes a detailed case-study of the first such application of evolution directly to the configuration of a Field Programmable Gate Array (FPGA). Evolution is allowed to explore beyond the scope of conventional design methods, resulting in a highly efficient circuit with a richer structure and dynamics and a greater respect for the natural properties of the implementation medium than is usual.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Adrian Thompson, <cite><a href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.50.9691">An evolved circuit, intrinsic in silicon, entwined with physics (1996)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">I want to unpack that abstract:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Thompson designed an electric circuit to perform <q>a tone-discrimination task</q> – it listens to a sound, and can tell you which of two expected tones it has heard.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Thompson then <em>evolved</em> the circuit by taking its computer representation, introducing randomness, and making multiple variations.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">The critical part: the evolved circuit was selected not as a simulation, but by <em>making a physical version</em> and - experimentally - measuring how well it performed.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">This line in the abstract is far too modest: <q>a greater respect for the natural properties of the implementation medium than is usual</q> – because what happens is - excuse my French - BATSHIT INSANE.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Jumping to <em>Section 5. Analysis</em> in <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.9691&amp;rep=rep1&amp;type=pdf">the PDF</a>:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The evolved circuit is a mess.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So, of that tangle: <q>Parts of the circuit that could not possibly affect the output can be pruned away.</q> (By tracing what is connected.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">BUT! It turns out: if these parts of the circuit are prunes, the circuit no longer performs as well.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It turns out that 20% of the components <strong>cannot be removed</strong> even though <q>there is no connected path by which they could influence the output.</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What has happened? Thompson has evolved a circuit from <q>a ‘primordial soup’ of reconfigurable electronic components</q> – and he speculates that some of the components are interacting via the power-supply wiring or electromagnetic coupling. Not by conventional means.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(The circuit also stops working outside the 10 degrees Celsius range in which it was trained.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">In 1996, the idea of “training” a computer to perform a task was slightly absurd – yes, there were expert systems and there was AI, but it was a toy. 25 years later, and computers are fast enough such that machine learning is standard practice at every tech firm… and we’re still figuring out how far it can go. If trainable software’s time has come, how about trainable hardware?</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Given a single task, such as recognising a few simple words or a face, or performing protein folding, and so on, would it be possible to <em>discard</em> the complexity we currently devote to general purpose computing, and <em>train</em> a primordial soup of transistors to perform only that exact task – taking advantage of whatever nonlinear local effects and physics is available, abstraction layers be damned?</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Here’s another type of computer that makes use of deep physics: <a href="https://www.techbriefs.com/component/content/article/tb/techbriefs/photonics-optics/33676">Artificial Intelligence Device Identifies Objects at the Speed of Light</a>. It’s called a <strong>diffractive deep neural network.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The <em>existing</em> way for a camera to recognise an object is for the camera to convert light to pixel data, then the computer has, in software, a trained neural network (that’s machine learning again) that runs matrix maths on the grid of pixels until an object category pops out at the other end. The matrix math is fearsomely complex, and is trained in a process called machine learning. The result: It’s a dog! It’s a face! It’s a tree! Etc.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This <em>new</em>  way still uses machine learning, but the maths is replaced by a series of very thin, semi-transparent <q>8-centimeter-square polymer wafers.</q> Each wafer diffracts the light that comes through it. And:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">A series of pixelated layers functions as an “optical network” that shapes how incoming light from the object travels through them. The network identifies an object because the light coming from the object is mostly diffracted toward a single pixel that is assigned to that type of object. </p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">So you don’t need a camera.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You don’t need software.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">You take a stack of FINELY ETCHED TRAINED PLASTIC WAFERS, and you look through it at an object, like using a monocle. But instead of seeing the object more clearly in focus, you see a cryptic constellation of glittering pixels. You look up the constellation in your handbook, and…  It’s a dog! It’s a face! It’s a tree! Etc. Only, at the speed of light. With no power required.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Physics performing computation at the granularity of the universe.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">By using the interference of light with itself.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The analogy for me is that you have a swimming pool, the shape of which is ingeniously and carefully constructed, such that when you throw in an object, the ripples all bounce around and reflect off the edges and change in speed given the depth, and all collide in such a way that the shape of the splash spells a word in the air: the name of the object you threw in.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">I can’t help but cross these ideas in my head.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What if we disregarded general purpose computing and abstraction layers in favour of speed?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What if we could evolve hardware to make use of hidden physics?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What if we used light?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What then?</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Perhaps a computer, for a specific task, would be a million times faster. Or to put it another way, that’s 20 Moore’s Law cycles: 40 years of performance gain. That’s like saying we could leapfrog from 1981 computers to 2021 computers.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The <em>speed</em> of computers now is what has made machine learning possible. Advanced statistics, neural networks, etc, all of this was known pretty well decades before. But it was impossible to run.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So what <em>today</em> is impossible to run?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What if you could make a single-purpose, zero power lens that looks at a handwritten number and breaks cryptography?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Or sequences a gene?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Or runs a thousand <a href="/home/2020/11/26/cerebras">faster than realtime simulations</a> and drives your car for you? Or predicts behaviour of a person in a negotiation? What about computational photography that can look around corners by integrating the possibility of photons, or can brute force prove or disprove any mathematical theorem?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Or understands and can generate natural language just like GPT-3 but a million times better? Or, <a href="/home/2020/08/24/ai_overhang">as in that speculation about an AI overhang</a>: <q>Intel’s expected 2020 revenue is $73bn. What if they could train a $1bn A.I. to design computer chips that are 100x faster per watt-dollar? (And then use those chips to train an even better A.I…)</q></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What is the ultimate limit of computational operations per gram of the cosmos, and why don’t we have compilers that are targeting <em>that</em> as a substrate? I would like to know that multiple.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And, a question for computer scientists, what single question would you ask if you have a dedicated computer that was <em>[that multiplier]</em> faster? Because I would like to know.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">I guess what I’m saying is that it might be possible, with today’s technology, to make a monocle, perhaps one that you fold down like a pirate’s patch, that when you look through it with your eye performs - with zero power - a single massively complex AI computation on whatever you’re looking at, as fast as computers will run decades in the future.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">If I were the US government, I would be pouring <em>billions</em> into this.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2021">20-most-popular-in-2021</a>
+          (20 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2021/04/20/computers">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. weather" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Let’s use spreadsheets to rewire apps and make new ones (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2022/12/13/spreadsheets">
+
+<meta property="og:title" content="Let’s use spreadsheets to rewire apps and make new ones">
+
+<meta property="og:description" content="Posted on Tuesday 13 Dec 2022. 909 words, 8 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2022/12/13/spreadsheets.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2022-12-13T18:15:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Let’s use spreadsheets to rewire apps and make new ones</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    18.15, Tuesday 13 Dec 2022
+    <span class="nowrap">
+      <a
+        href="/home/2022/12/13/spreadsheets"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">How about an app with a spreadsheet under the hood?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Like, the experience would be this: you’re using your photos app or Zoom or expense filing SaaS tool, then you go to Settings and scroll aaaaall the way to the bottom, and tap a power user button that says <em>“Open Spreadsheet.”</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then, magically, Google Sheets opens with all your data in it, and you can sort and query it in all the ways you couldn’t before, and change the titles of your expense claims with spreadsheet functions and that all gets reflected back into the app, or build a callout to an AI to describe all your photos and add natural language tags, do it yourself or ask a friend who knows Excel functions, or whatever really. Anything the app developers didn’t add because they’re building for the 80% use case, and you’re building just for you.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So that’s the idea.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Example #1. Where the spreadsheet is an alt UI for the app.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">This is the pattern described by Geoffrey Litt and Daniel Jackson in their 2020 prototype, <em>Wildcard.</em></p>
+<blockquote cite="https://www.geoffreylitt.com/wildcard/salon2020/" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Geoffrey Litt and Daniel Jackson" data-title="Wildcard: Spreadsheet-Driven Customization of Web Applications (2020)">
+<p class="measure-wide f6 f5-l lh-copy black-80">In this paper, we present <em>spreadsheet-driven customization,</em> a technique that enables end users to customize software without doing any traditional programming. <u>The idea is to augment an application’s UI with a spreadsheet that is synchronized with the application’s data.</u> When the user manipulates the spreadsheet, the underlying data is modified and the changes are propagated to the UI, and vice versa.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Geoffrey Litt and Daniel Jackson, <cite><a href="https://www.geoffreylitt.com/wildcard/salon2020/">Wildcard: Spreadsheet-Driven Customization of Web Applications (2020)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">You can see some videos at that link: <em>Wildcard</em> is a prototype browser extension and, visiting Airbnb, you can pop open a spreadsheet view and sort search results in ways not supported by the official site, run calculations etc.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Litt wrote a long Twitter thread listing <a href="https://twitter.com/geoffreylitt/status/1589656517157920769">lesser known projects that also use spreadsheets</a>.)</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>Example #2. Where the spreadsheet is a canvas to weave together new apps.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Fabian Stelzer recently made a Google Sheets template called HOLOSHEET that includes functions to call out to GPT-3 (text generation) and Stable Diffusion (image synthesis) to draft and visualise movies…</p>
+<blockquote cite="https://twitter.com/fabianstelzer/status/1576958436700393473" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="fabians.eth (@fabianstelzer)" data-title="4:32 PM, Oct 3, 2022">
+<p class="measure-wide f6 f5-l lh-copy black-80">HOLOSHEET, story edition!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">built a google sheet powered by GPT-3 and #stablediffusion that outputs full stories, with images!</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">you input a prompt &amp; the AIs generate story, visuals and a title</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">in any style you want..</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">here’s “The wizard approached the abyss”</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">a few seconds later:</p>
+<footer class="measure f6 f5-l lh-copy black-80">– fabians.eth (@fabianstelzer), <cite><a href="https://twitter.com/fabianstelzer/status/1576958436700393473">4:32 PM, Oct 3, 2022</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(There’s a series of screenshots at that link.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So you might say <q>The wizard approached the abyss</q> and specify a fantasy style from the dropdown, then an embedded, parameterised GPT-3 prompt outlines the story in four scenes, with each scene then being sent to another AI for the illustration.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Side note: Stelzer isn’t a coder. To make the <code>=GPT3()</code> Google Sheets function, <a href="https://twitter.com/fabianstelzer/status/1572571003804614657">he asked GPT-3 itself to write the Javascript</a>.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">So both of these are examples of that <a href="/home/2020/08/26/adaptive_design">old design movement Adaptive Design</a> <em>(2020)</em> – end-user adaptation of products that metaphorically have the wires hanging out the back.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Like, sometimes: when you own a house, and not only does it allow for changing around the rooms and so on, but it has been architected so that there’s a blank wall and space on the plot for you to build an extension.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">As with architecture, so software.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Adaptive Design in software allows for</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">End-user software customisation – which means that software that was semi-useful now becomes an intrinsic part of my personal “ecosystem”</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">A kind of distributed R&amp;D – where the user community has the ability to find its own solutions, and (as a developer) you can look at what has been done and more in that direction.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">(The second point came up in conversation recently. Yes sure it’s important to go and talk to users and co-create solutions. But why not give people the tools and knowledge to adapt the technology <em>themselves</em> and then pay attention to the power users?)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">What’s neat about spreadsheets, and particularly neat about Google Sheets, is that:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">they’re a Figma-like <a href="https://infinitecanvas.tools">infinite canvas</a> that people already understand, and programmable too with formulas that so many already use - extensible, expressive and accessible</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Google Sheets is naturally <a href="/home/2022/11/09/map">multiplayer</a> and collaborative, so it’s possible for people to share and work socially.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">They’re an interesting vernacular, spreadsheets.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>What should startups do?</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">In the early 2000s, user interfaces were being torn up and re-invented as work went online. The response was a fluid world of web APIs, remix culture, and - to frame that with theory - Adaptive Design.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Anyone remember <a href="https://en.wikipedia.org/wiki/Yahoo!_Pipes">Yahoo! Pipes</a> (RIP)? A universal canvas for remixing the web with native handling of APIs and RSS… a bigger loss than Google Reader, that one.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I feel like we’re seeing this deconstruction/reconstruction again? With generative AIs, and new multiplayer ways of working and new tools for thought, there’s a growing participation in finding out what our new tools should be and how they should behave.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Maybe this time round, instead of APIs we could have Excel formulas? APIs never had that work surface to knit them together; formulas have that built-in.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I wonder what an app team could do to be really spreadsheet friendly? I wonder what the Google Sheets team could do?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And: back in the day there were API lifecycle/management startups <em>(that then all got acquired).</em> Will there be equivalent startups to publish/consume/manage the spreadsheet surface?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Yeah so we should do that.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2022">20-most-popular-in-2022</a>
+          (20 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2022/12/15/actioncat">Action Cat! A new experiment around bots, video calls, voice, and spreadsheets</a>
+        (15 Dec 2022)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2022/12/13/spreadsheets">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. ai" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>

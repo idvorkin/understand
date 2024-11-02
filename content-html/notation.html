@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--
+
+       .....           .....
+   ,ad8PPPP88b,     ,d88PPPP8ba,
+  d8P"      "Y8b, ,d8P"      "Y8b
+ dP'           "8a8"           `Yd
+ 8(              "              )8
+ I8                             8I
+  Yb,          T h e          ,dP
+   "8a,      W o r l d      ,a8"
+     "8a,     W i d e     ,a8"
+       "Yba    W e b    adP"
+         `Y8a         a8P'
+           `88,     ,88'
+             "8b   d8"
+              "8b d8"
+               `888'
+                 "
+
+-->
+  <head>
+    
+
+
+    <title>Collecting my thoughts about notation and user interfaces (Interconnected)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/home/static/styles/tachyons-4.12.min.css">
+    <link rel="stylesheet" href="/home/static/styles/interconnected-2020.css?v=10">
+    
+    <!-- Fathom analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="RLHROXCN" defer></script>
+    
+    
+<script type='module' src='https://unpkg.com/disco-party@0.1.5'></script>
+<!--<script type="module" src="/static/js/disco-party/disco-party/disco-party.esm.js?v=22"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Interconnected RSS feed"
+  href="https://interconnected.org/home/feed">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@intrcnnctd">
+<meta name="twitter:creator" content="@genmon">
+
+<meta property="og:url" content="https://interconnected.org/home/2021/08/12/notation">
+
+<meta property="og:title" content="Collecting my thoughts about notation and user interfaces">
+
+<meta property="og:description" content="Posted on Thursday 12 Aug 2021. 1,807 words, 9 links. By Matt Webb.">
+<meta property="og:image" content="https://interconnected.org/home/2021/08/12/notation.png?v=1">
+<meta property="og:image:alt" content="An abstract, procedurally generated image which looks busier when there are more words.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Interconnected, a blog by Matt Webb">
+<meta property="og:updated_time" content="2021-08-12T12:34:00">
+
+
+  </head>
+  <body class="container blog">
+  
+
+<disco-room host="disco-party.genmon.partykit.dev">
+
+  <main class="content">
+  
+
+<div class="mw9-l center ph3-ns pt4">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2">
+    &nbsp;
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    <div>
+      <h1 class="f-subheadline-l f1-m f2 mt0 mb0 pb1 pb0-ns"><a href="/home/" class="link white hover-orange">Interconnected</a></h1>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mw9-l center ph3-ns">
+<div class="cf ph2-ns">
+  <div class="fl w-100 w5-l ph2 sticky-l">
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 mt1 mb0 dib">
+        A blog by Matt Webb
+      </h5>
+      <ul class="list pl0 mt1 mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="/" class="link underline black-50 hover-bg-white">About</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="#archive" class="link underline black-50 hover-bg-white">Archive</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.actsnotfacts.com" class="link underline black-50 hover-bg-white">Work</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Subscribe for $0
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://buttondown.com/genmon" class="link underline black-50 hover-bg-white">Email</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://interconnected.org/home/feed" class="link underline black-50 hover-bg-white">RSS feed</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://aboutfeeds.com" class="link underline black-50 hover-bg-white">(What is a feed?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Unoffice Hours
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://calendly.com/mwie/30min" class="link underline black-50 hover-bg-white">Book a call</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="/home/2020/09/24/unoffice_hours" class="link underline black-50 hover-bg-white">(What is this?)</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        a.k.a. @genmon
+      </h5>
+      <ul class="list pl0 mt0 mt1-l mb0 dib mb4-l">
+        <li class="f5-l f6 lh-title dib"><a href="https://x.com/genmon" class="link underline black-50 hover-bg-white">X/Twitter</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.instagram.com/genmon/" class="link underline black-50 hover-bg-white">Insta</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.threads.net/@genmon/" class="link underline black-50 hover-bg-white">Threads</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://mastodon.social/@genmon" class="link underline black-50 hover-bg-white">Mastodon</a></li>
+        <li class="f5-l f6 lh-title dib"><a href="https://www.linkedin.com/in/genmon/" class="link underline black-50 hover-bg-white">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <aside>
+      <h5 class="f6-l f7 ttu tracked black-50 normal mt0 mb0 dib">
+        Building the AI clock
+      </h5>
+        <ul class="list pl0 mt0 mt1-l mb4 dib">
+        <li class="f5-l f6 lh-title dib"><a href="https://poem.town" class="link underline black-50 hover-bg-white">Check out Poem/1</a></li>
+        </ul>
+    </aside>
+  </div>
+  <div class="fl w-100 w-70-l ph3-l ph2">
+    
+
+<article id="post">
+  
+    <h2 class="f-subheadline-l f1-m f2 lh-solid mt0 pb1 pb4-ns black-40 mw6-m mb3 mb5-ns">Collecting my thoughts about notation and user interfaces</h2>
+  
+
+  <h5 class="f5-l f6 black-50 normal mb2 lh-title mt0 mt3-ns">
+    12.34, Thursday 12 Aug 2021
+    <span class="nowrap">
+      <a
+        href="/home/2021/08/12/notation"
+        class="link underline black-50 hover-bg-white"
+        id="permalink">Link to this post</a>
+    </span>
+  </h5>
+
+  
+  <div class="f5 f4-l measure-wide" id="social-select-root" data-highlights>
+  <p class="measure-wide f6 f5-l lh-copy black-80">I’m circling something to do with <strong>notation</strong> and <strong>software user interfaces</strong> and what connects them. And things aren’t quite cohering for me yet, so this is me just collecting my thoughts…</p>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(I’m designing user-composable interfaces this week, so long term the goal is to figure out some principles.)</em></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">A good starting point is <em>pirate maps,</em> those sketched maps with minimal detail that can none-the-less lead you to the X that marks the spot on the right treasure island.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Or to be more specific, urbanist Kevin Lynch’s city maps from his 1960 book <em>The Image of the City.</em> <a href="/home/2021/03/31/maps">I’ve described his approach here (March 2021)</a> <em>(where I also pick at the possible neurological underpinnings)</em> so to briefly summarise:</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Lynch puts forward five primitive elements: paths (e.g. streets); edges (e.g. uncrossable rivers); districts; nodes (e.g. street corners); landmarks (e.g. a recognisable building). Each element has an intuitive way to sketch it, as if on the back of a napkin.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">The map of Boston (his first example) is immediately recognisable. Ask a person to sketch a city, or a route to a place, and they’ll automatically use something very like Lynch’s system.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So Lynch’s five primitives comprise a <strong>notation.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s <strong>composable.</strong> A small number of simple elements can be combined, according to their own grammar, for more complex descriptions. There’s no cap on complexity; this isn’t paint by numbers. The city map can be infinitely large.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Compositions are <strong>shareable.</strong> And what’s more, they’re <strong>degradable:</strong> a partial map still functions as a map; one re-drawn from memory on a whiteboard still carries the gist. So shareable, and pragmatically shareable.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Not only are maps in this notation functional for communication, but it’s possible to look at a sketched city map and deconstruct it into its primitive elements (without knowing Lynch’s system) and see how to use those elements to extend or correct the map, or create a whole new one. So the notation is <strong>learnable.</strong></p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">The idea of composability is worth digging into.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A pirate map is a drawing, and drawings are compositions of dots and lines and textures: <q>A drawing is simply a line going for a walk</q> (<a href="https://www.paulklee.net/paul-klee-quotes.jsp">Paul Klee</a>). But these would be poor primitives. Why?</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">A good, composable notation has primitives which are <strong>semantic.</strong> A line doesn’t mean anything, it’s too abstract – but a <em>path</em> or an <em>edge</em> (in Lynch’s system) refer to qualities of things in the real world. I’m also going to say that a notation must be <strong>grammatical,</strong> which is to say that there are rules about how primitives can be combined. </p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There are also <em>not too many</em> primitives. You want a system which is <strong>efficiently expressive.</strong> Like, you can say complex things with the minimum of vocabulary. Why? Because then the person using the notation can hold it in their head.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Adam Wiggins is the co-founder of Heroku, the prescient cloud-based technology platforms. It was ahead of its time, incredibly simple to use, but powerful – with an almost toy-like interface <em>(I say that as a compliment)</em> the complexity of hosting, scaling and managing servers was almost completely hidden.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Here is Wiggins relating his philosophy:</p>
+<blockquote cite="https://gist.github.com/adamwiggins/5687294" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Adam Wiggins" data-title="My Heroku values">
+<p class="measure-wide f6 f5-l lh-copy black-80"><u>The value of a product is the number of problems it can solve divided by the amount of complexity the user needs to keep in their head to use it.</u> Consider an iPhone vs a standard TV remote: an iPhone touchscreen can be used for countless different functions, but there’s very little to remember about how it works (tap, drag, swipe, pinch). With a TV remote you have to remember what every button does; the more things you can use the remote for, the more buttons it has. We want to create iPhones, not TV remotes.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Adam Wiggins, <cite><a href="https://gist.github.com/adamwiggins/5687294">My Heroku values</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80"><em>(Via Simon Willison <a href="https://simonwillison.net/2020/Dec/3/adam-wiggins-heroku-values/">who picked out this quote</a>.)</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It matters what you can hold in your head because then the notation becomes a tool for the imagination. It is <strong>suggestive.</strong> Lego is suggestive. If you sit down and compose with the bricks, aimlessly, you will come up with <em>new ideas</em> that you wouldn’t have reached otherwise. The studs on the bricks are a grammar; the shapes are the semantics. You don’t get lost in complexity because the bricks are right there on the floor, so you play and, o ho!, there’s a novel kind of house you can build, you hadn’t thought of that.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">At this point I’m slip-sliding between notation and interface, and this is maybe one of the things I’m trying to figure out. Perhaps a notation is <em>always</em> an interface to <em>something?</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Think of Feynman diagrams from physics. These are diagrams of particle interactions, like an electron hits a positron and both disappear while emitting a photon. <a href="https://en.wikipedia.org/wiki/Feynman_diagram">The Wikipedia page shows examples.</a></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But the lines, arrows, and squiggles have a grammar to them. And Feynman diagrams directly map to the fearsomely complex mathematics of quantum field theory. Manipulating the diagram <em>is the same as</em> performing the calculations.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">So Feynman diagrams, as a notation, exist on the boundary of two realms; the interface between the scientific model (a representation of physical reality) and the imagination of the physicist.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Software user interfaces: let me try to draw the parallel.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">I’ve been reading Steven Sinofsky’s first-person account of the rise of the Microsoft and the PC, which is astounding – it’s technology and strategy and history from someone who was right in the thick of it, at a pivotal time. Sinofsky is serialising the whole story as <a href="https://hardcoresoftware.learningbyshipping.com/about">Hardcore Software</a>: <em>Inside the Rise and Fall of the PC Revolution.</em></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">He has this to say about the complexity of Microsoft Office (the first and much successful office software suite), and specifically about the <q>buttons, menus, and commands,</q> and <q>every icon, command name, tooltip, menu string, and keyboard accelerator</q>…</p>
+<blockquote cite="https://hardcoresoftware.learningbyshipping.com/p/041-scaling-the-office-infrastructure" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="Steven Sinofsky" data-title="041. Scaling the Office Infrastructure and Platform (Hardcore Software)">
+<p class="measure-wide f6 f5-l lh-copy black-80">One of the most significant differences between Office and most other tools is the sheer breadth and simultaneous depth of features, something that would become even more apparent as web pages came to the forefront. Each application had over 1000 commands (buttons, menus, etc.) with something over 2500 unique commands in Office96.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– Steven Sinofsky, <cite><a href="https://hardcoresoftware.learningbyshipping.com/p/041-scaling-the-office-infrastructure">041. Scaling the Office Infrastructure and Platform (Hardcore Software)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">That was 25 years ago. I can only imagine that complexity has increased since.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Compare with the Xerox Star (1981) which introduced the desktop interface in the first place, together with the underlying metaphor of <em>objects.</em> Like, you could select a file or a paragraph or a printer and choose what do to with it, and that’s the ancestral idea behind our graphical user interfaces today.</p>
+<blockquote cite="https://guidebookgallery.org/articles/thexeroxstararetrospective" class="quoteback bl bw2 pl2 b--orange ml0 italic i" data-author="IEEE Computer" data-title="The Xerox Star: A retrospective (Sept 1989)">
+<p class="measure-wide f6 f5-l lh-copy black-80">One way to simplify a computer system is to reduce the number of commands. Star achieves simplicity without sacrificing functionality by having a small set of generic commands apply to all types of data: Move, Copy, Open, Delete, Show Properties, and Same (Copy Properties). Dedicated function keys on Star’s keyboard invoke these commands.</p>
+<footer class="measure f6 f5-l lh-copy black-80">– IEEE Computer, <cite><a href="https://guidebookgallery.org/articles/thexeroxstararetrospective">The Xerox Star: A retrospective (Sept 1989)</a></cite></footer>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">As an example of this flexibility:</p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">In Star, users simply Copy to a printer icon whatever they want to print. Similarly, the Move command is used to invoke Send Mail by moving a document to the out-basket.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">…which is powerful! But only works because the user can see, on the desktop, the icon of a printer and the icon of an out-basket.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">I’m stretching the definition of <em>“notation”</em> now, but let’s say that both Xerox Star and Microsoft Office present the user with a notation to their internals, made out of commands and also graphical components: windows, icons, menus, pointers.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">There’s a quality to this “notation” which is suggestive, as with Lego bricks, in that you can experiment with trying different commands.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But I’ll go further as say that there’s a quality which is that the notation is <strong>intentional</strong> and that is essential to a good notation or a good interface.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">That is, you can imagine a goal (being it printing your document or drawing a map of Boston), and you know the available primitives, and you can figure out a sequence or a composition to get from A to B.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Related to all of these points, a notation or an interface must be <strong>legible.</strong></p>
+<p class="measure-wide f6 f5-l lh-copy black-80">It’s no good with a desktop interface, say, if icons are draggable and buttons are clickable, but the user doesn’t <em>know</em> that these operations are possible. So we design icons and buttons with <em>visual affordances:</em> they <em>look</em> as if they are pick-up-able, press-able, and so on.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Legibility, consistency, and affordances: all of these contribute to creating a <em>mental model</em> of the notation system in the mind of the user, and that seems like a prerequisite for many of the other qualities above.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">Perhaps HTML is a notation? (Or rather, maybe it was in the early days.)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">When I wrote about the <a href="/home/2021/02/01/golems">original ideas behind files and icons</a> (back in February), it felt important that the file was a <em>boundary object:</em></p>
+<blockquote class="bl bw2 pl2 b--orange ml0 italic i">
+<p class="measure-wide f6 f5-l lh-copy black-80">Files are meaningful to computers, but they are also meaningful to users, and <em>both</em> can manipulate the same object. The two of you inhabit different worlds, but you’re talking about the same thing.</p>
+</blockquote>
+<p class="measure-wide f6 f5-l lh-copy black-80">So HTML, the language for making web pages, is a “notation” on an interesting boundary. It has a small number of primitive elements, and a grammar to compose with them. And it is…</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Easy to write: the creator can describe something simple or infinitely complex, with the same small set of rules. And given the set of rules is simple, it’s also good to imagine with.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Machine-readable: the browser application uses the exact same notation to display the webpage.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Obvious to interact with: buttons are clickable, hyperlinks are followable.</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Good for reading and sharing: a user may <em>View Source</em> with their browser and read the code behind a webpage, and from there they are able to copy, tweak, and learn.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">(Those last points were more true in the early days of the web…)</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">HTML sits on a boundary between the machine, the creator, and the reader.</p>
+<hr class="xh1 bg-white w3 ml0 mv5 bb-0 bl-0 br-0 bt-1 b--black" />
+<p class="measure-wide f6 f5-l lh-copy black-80">To summarise those desirable qualities, a good notation is:</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">Composable</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Shareable</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Degrabable</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Learnable</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Semantic</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Grammatical</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Efficiently expressive</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Suggestive</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Intentional</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">Legible</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">I can’t quite tell whether I’m trying to force together two concepts (notation and user interface) which are fundamentally different, or whether there is something fruitful in seeing them as aspects of the same thing. </p>
+<p class="measure-wide f6 f5-l lh-copy black-80">And I’m still not quite sure whether there are indeed lessons here for designing a composable user interface, or a design system, or whatever it is I’m working on.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">But since I’m working on something where</p>
+<ul class="list ph0 ph0-ns bulleted-list">
+<li class="measure-wide f6 f5-l lh-copy black-80">engineers are building reusable components (which is the way of modern software and web development)</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">users need to understand how to use, navigate, and achieve tasks with the interface they see</li>
+<li class="measure-wide f6 f5-l lh-copy black-80">and creators will compose these interfaces.</li>
+</ul>
+<p class="measure-wide f6 f5-l lh-copy black-80">Then it seems like this is the right territory to be exploring.</p>
+<p class="measure-wide f6 f5-l lh-copy black-80">Any recommended reading is appreciated.</p>
+  </div>
+
+  </article>
+
+  <hr class="invisible">
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      More posts tagged:
+    </h5>
+      <ul class="list ph0 ph0-ns bulleted-list">
+        
+        <li class="measure f6 f5-l lh-copy black-50">
+          <a class="link underline black-50 hover-orange" href="/home/tagged/20-most-popular-in-2021">20-most-popular-in-2021</a>
+          (20 posts)
+        </li>
+        
+      </ul>
+  
+
+  
+    <h5 class="f6-l f7 ttu tracked black-50 normal mb2 lh-title mt5">
+      Follow-up posts:
+    </h5>
+
+    <ul class="list ph0 ph0-ns bulleted-list">
+      
+      <li class="measure f6 f5-l lh-copy black-40">
+        <a class="link underline black-50 hover-orange" href="/home/2021/12/09/primitive_design">Primitive design and how I’m spending my week</a>
+        (9 Dec 2021)
+      </li>
+      
+    </ul>
+  
+
+  
+    
+  
+  
+  <p class="measure f6 f5-l lh-copy black-50 mt6 mb3 i">If you enjoyed this post, please consider sharing it by email or on social media. <a class="link underline black-50 hover-bg-white" href="/home/2021/08/12/notation">Here’s the link.</a> Thanks, <span class="nowrap">—Matt.</span></p>
+  
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  </main>
+  <footer class="bg-black-90 white-40 pv5 mt3" id="archive">
+  <div class="mw9-l center ph3-ns">
+    <div class="cf ph2-ns">
+      <div class="fl w-100 w5-l ph3-l ph2">
+        &nbsp;
+      </div>
+      <div class="fl w-100 w-70-l ph3-l ph2">
+        <div><disco-include>
+          
+            
+            <h2 class="lh-title f1-m f2 mt0 mb0">Most recent posts</h2>
+            <ul class="list ph0 lh-body">
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/11/01/nintendo" class="link underline white-70 hover-orange">Watching Nintendo think out loud about radar and music</a>
+                  <span class="nowrap">1 Nov 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/28/colophon" class="link underline white-70 hover-orange">Colophon</a>
+                  <span class="nowrap">28 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/24/soup" class="link underline white-70 hover-orange">What Are The Civilian Applications?</a>
+                  <span class="nowrap">24 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/18/turing" class="link underline white-70 hover-orange">Turing test variations</a>
+                  <span class="nowrap">18 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/11/filtered" class="link underline white-70 hover-orange">Filtered for time and false memory</a>
+                  <span class="nowrap">11 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/10/03/shame" class="link underline white-70 hover-orange">Ok hear me out iPhones should have a sense of shame</a>
+                  <span class="nowrap">3 Oct 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/27/distribution" class="link underline white-70 hover-orange">Sometimes the product innovation is the distribution</a>
+                  <span class="nowrap">27 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/20/filtered" class="link underline white-70 hover-orange">Filtered for home robots, fast and slow</a>
+                  <span class="nowrap">20 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/13/mustard" class="link underline white-70 hover-orange">The mustard second coming as predicted by C-wave theory</a>
+                  <span class="nowrap">13 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/05/cursor-party" class="link underline white-70 hover-orange">Every webpage deserves to be a place</a>
+                  <span class="nowrap">5 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/09/02/channels" class="link underline white-70 hover-orange">How to read this blog as of Sept 2024</a>
+                  <span class="nowrap">2 Sep 2024</span>
+                
+              </li>
+              
+              <li class="b f5">
+                
+                  <a href="/home/2024/08/29/beaches" class="link underline white-70 hover-orange">Beaches are for people who enjoy the bureaucracy of going to the beach</a>
+                  <span class="nowrap">29 Aug 2024</span>
+                
+              </li>
+              
+            </ul>
+
+            
+            <p class="b f5">
+              Continue reading:
+              <a href="/home/2024" class="link underline white-70 hover-orange">All in 2024</a>
+            </p>
+
+            
+            
+            <p class="lh-solid b f5">
+              <span class="f6 ttu tracked orange">streak</span>
+              <span class="nowrap">
+              New posts for <span class="streak-badge bg-orange black nb2 nb0-ns">240</span> consecutive weeks
+              </span>
+              <span class="nowrap">
+              (see: <a href="/home/2020/09/10/streak" class="link underline white-70 hover-orange">blogging tips</a>)
+              </span>
+            </p>
+            
+
+            <p class="b f5 lh-title">
+              New? Start here:
+              <a href="/home/2023/12/22/top-posts" class="link underline white-70 hover-orange">Best of 2023</a>
+              (also
+              <a href="/home/2022/12/21/top_posts" class="link underline white-70 hover-orange">2022</a>,
+              <a href="/home/2021/12/23/top_posts" class="link underline white-70 hover-orange">2021</a>,
+              <a href="/home/2020/12/17/top_posts" class="link underline white-70 hover-orange">2020</a>)
+              <br>
+              Or explore the archives:
+              <a href="/home/on-this-day" class="link underline white-70 hover-orange">On this day</a>
+            </p>
+
+            
+          
+
+          <hr class="invisible">
+
+          
+            
+              <h2 class="lh-title f1-m f2 mt4 mb0">Archive</h2>
+  
+              <ul class="list pl0">
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2024" class="link underline white-70 hover-orange">2024</a>
+                    51 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2023" class="link underline white-70 hover-orange">2023</a>
+                    68 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2022" class="link underline white-70 hover-orange">2022</a>
+                    96 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2021" class="link underline white-70 hover-orange">2021</a>
+                    128 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2020" class="link underline white-70 hover-orange">2020</a>
+                    116 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2019" class="link underline white-70 hover-orange">2019</a>
+                    8 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2018" class="link underline white-70 hover-orange">2018</a>
+                    16 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2017" class="link underline white-70 hover-orange">2017</a>
+                    22 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2016" class="link underline white-70 hover-orange">2016</a>
+                    48 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2015" class="link underline white-70 hover-orange">2015</a>
+                    88 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2014" class="link underline white-70 hover-orange">2014</a>
+                    30 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2013" class="link underline white-70 hover-orange">2013</a>
+                    6 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2012" class="link underline white-70 hover-orange">2012</a>
+                    27 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2011" class="link underline white-70 hover-orange">2011</a>
+                    76 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2010" class="link underline white-70 hover-orange">2010</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2009" class="link underline white-70 hover-orange">2009</a>
+                    2 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2008" class="link underline white-70 hover-orange">2008</a>
+                    59 posts
+                  </li>
+                  
+                
+                  
+                  <li class="b f3">
+                    <a href="/home/2007" class="link underline white-70 hover-orange">2007</a>
+                    20 posts
+                  </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          
+        </disco-include>
+        </div>
+        
+        <hr class="invisible">
+
+	    	
+        <!-- https://oliverjam.es/articles/site-search-ddg -->
+        <form action="https://duckduckgo.com" target="_blank" rel="noopener" class="mt4 mb0">
+			    <input class="input-reset f4 pa2" name="q" id="search" type="text" placeholder="e.g. dolphins" aria-label="Search" size="12">
+          <input type="hidden" name="sites" value="interconnected.org/home" />
+          <input type="hidden" name="ko" value="-2" />
+          <input type="hidden" name="k1" value="-1" />
+          <input type="hidden" name="kz" value="-1" />
+          <input type="hidden" name="km" value="m" />
+          <input type="hidden" name="k7" value="#cdecff" />
+          <button class="button-reset f4 pa2" type="submit">Search</button>
+        </form>        
+
+        <!--<hr class="invisible">
+
+        <div class="flex items-center justify-left mt3 pr3">
+          <div class="dib mr2">
+            Enable secret experimental features
+          </div>
+          <label class="dib switch">
+            <input type="checkbox" id="social-select-consent">
+            <span class="slider round"></span>
+          </label>
+        </div>-->
+
+        <p class="mt5 mb2">
+          Since February 2000. Copyright © 2024 Matt Webb.
+        </p>
+        <p class="mt2">
+          p.s. here’s <a class="white-70 hover-orange link underline" href="/home/blogroll">my blogroll</a> and the <a class="white-70 hover-orange link underline" href="/home/2024/10/28/colophon">colophon</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>  
+
+</footer>
+</disco-party>
+<script src="https://cursor-party.genmon.partykit.dev/cursors.js"></script>
+
+  </body>
+</html>
